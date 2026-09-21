@@ -1,0 +1,8 @@
+__pycache__/
+scratch/
+# large per-game API caches; rebuilt by the fetch scripts
+data/raw/espn_odds/
+data/raw/*_log.txt
+# third-party data without a license: downloaded by src/fetch_yahoo.py instead of redistributed
+data/raw/odds_yahoo/
+oved_prior.txt
