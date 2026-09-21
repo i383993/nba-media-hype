@@ -1,0 +1,60 @@
+seasons 2016-2026 (11), teams 30
+
+=== STANDINGS: Spearman correlation between predictor and final (or rest-of-season) win %
+    averaged over seasons; 1 = perfect ranking, 0 = no relationship
+checkpoint      preseason   25%   50%   75%
+predictor                                  
+crowd_all            0.23  0.21  0.26  0.18
+crowd_buzz          -0.05 -0.21 -0.08 -0.04
+fan_attn             0.13  0.15  0.18  0.14
+fan_buzz            -0.17 -0.19 -0.11 -0.08
+media_attn           0.27  0.30  0.25  0.17
+media_buzz          -0.01 -0.22 -0.18 -0.15
+media_tone           0.11  0.03  0.17  0.08
+stats_baseline       0.57  0.66  0.65  0.62
+
+=== CHAMPION: where the eventual champion sat in each predictor's ranking (1 = top pick)
+-- top1
+checkpoint      preseason   25%   50%   75%  pre-playoffs
+predictor                                                
+crowd_all            0.18  0.27  0.36  0.27          0.18
+crowd_buzz           0.00  0.09  0.00  0.00          0.00
+fan_attn             0.18  0.27  0.18  0.09          0.18
+fan_buzz             0.00  0.09  0.09  0.00          0.00
+media_attn           0.09  0.09  0.00  0.00          0.09
+media_buzz           0.09  0.00  0.00  0.00          0.00
+media_tone           0.09  0.09  0.09  0.00          0.18
+stats_baseline       0.27  0.36  0.45  0.27          0.27
+-- top3
+checkpoint      preseason   25%   50%   75%  pre-playoffs
+predictor                                                
+crowd_all            0.27  0.45  0.55  0.36          0.27
+crowd_buzz           0.09  0.09  0.09  0.00          0.00
+fan_attn             0.45  0.45  0.45  0.45          0.45
+fan_buzz             0.09  0.09  0.18  0.00          0.00
+media_attn           0.55  0.55  0.55  0.45          0.27
+media_buzz           0.36  0.09  0.18  0.00          0.00
+media_tone           0.18  0.27  0.27  0.27          0.18
+stats_baseline       0.55  0.64  0.64  0.64          0.55
+-- median_rank
+checkpoint      preseason   25%   50%   75%  pre-playoffs
+predictor                                                
+crowd_all            5.00   5.0   3.0   6.0           7.0
+crowd_buzz          12.00  22.5  16.5  18.0          24.5
+fan_attn             4.00   7.0   4.0   6.0           7.0
+fan_buzz            15.00  21.0  17.0  16.0          25.0
+media_attn           3.00   3.0   3.0   4.0           6.0
+media_buzz          12.00  24.0  21.0  19.0          20.0
+media_tone          13.00   9.0   8.0  15.0          13.0
+stats_baseline       2.25   2.0   2.0   2.0           3.0
+
+=== PLAYOFF SERIES (165 series): share where the predictor favoured the winner
+                accuracy     se
+media_attn         0.485  0.039
+media_tone         0.473  0.039
+fan_attn           0.606  0.038
+crowd_all          0.618  0.038
+media_buzz         0.315  0.036
+fan_buzz           0.424  0.038
+crowd_buzz         0.412  0.038
+stats_baseline     0.673  0.037

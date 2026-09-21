@@ -16,7 +16,8 @@ from google.cloud import bigquery
 
 ROOT = Path(__file__).resolve().parent.parent
 SQL = (Path(__file__).parent / "gdelt_bq.sql").read_text()
-CHUNKS = [(f"{y}-08-01", f"{y + 1}-08-01") for y in range(2018, 2026)] + [("2026-08-01", "2026-09-21")]
+CHUNKS = ([("2015-07-01", "2016-08-01")] + [(f"{y}-08-01", f"{y + 1}-08-01") for y in range(2016, 2026)]
+          + [("2026-08-01", "2026-09-21")])
 
 
 def config(start, end, dry):
@@ -34,8 +35,13 @@ def main():
     args = ap.parse_args()
     client = bigquery.Client(project=args.project)
 
+    out = ROOT / "data" / "raw" / "gdelt_bq.csv"
+    done = pd.read_csv(out) if out.exists() else pd.DataFrame(columns=["day"])
+    have = set(pd.to_datetime(done.day).dt.strftime("%Y-%m"))
+    # only chunks not already on disk are queried (and counted toward the cost limit)
+    pending = [(s, e) for s, e in CHUNKS if not (s[:7] in have and e[:7] in have)]
     sizes = []
-    for start, end in CHUNKS:
+    for start, end in pending:
         tb = client.query(SQL, job_config=config(start, end, True)).total_bytes_processed / 1e12
         sizes.append(tb)
         print(f"{start} to {end}: {tb:.3f} TB")
@@ -47,9 +53,8 @@ def main():
     if total > args.max_tb:
         raise SystemExit(f"refusing: {total:.2f} TB > --max-tb {args.max_tb}")
 
-    out = ROOT / "data" / "raw" / "gdelt_bq.csv"
-    frames = []
-    for start, end in CHUNKS:
+    frames = [done] if len(done) else []
+    for start, end in pending:
         df = client.query(SQL, job_config=config(start, end, False)).to_dataframe()
         frames.append(df)
         print(f"{start}: {len(df)} team-days", flush=True)

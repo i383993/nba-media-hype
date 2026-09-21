@@ -150,7 +150,7 @@ def fade_hype(g, label, col, q=0.8, cut=None):
 
 def main():
     RES.mkdir(exist_ok=True)
-    tg = pd.read_csv(ROOT / "data" / "team_games.csv", parse_dates=["date"])
+    tg = pd.read_csv(ROOT / "data" / "team_games.csv", parse_dates=["date"], low_memory=False)
     tg = tg[~tg.season_type.str.startswith("play-in")]
     log(f"team-games {len(tg)}, seasons {sorted(tg.season.unique())}, "
         f"with line {tg.spread.notna().mean():.3f}")

@@ -1,0 +1,695 @@
+season,award,rank,source,ballots,name,team,points,first_place,place_votes
+2018,MVP,1,totals,,James Harden,HOU,965,86,86 15 0 0 0
+2018,MVP,2,totals,,LeBron James,CLE,738,15,15 79 7 0 0
+2018,MVP,3,totals,,Anthony Davis,NOP,445,0,0 7 70 14 4
+2018,MVP,4,totals,,Damian Lillard,POR,207,0,0 0 12 40 27
+2018,MVP,5,totals,,Russell Westbrook,OKC,76,0,0 0 6 10 16
+2018,MVP,6,totals,,Giannis Antetokounmpo,MIL,75,0,0 0 1 18 16
+2018,MVP,7,totals,,Kevin Durant,GSW,66,0,0 0 3 10 21
+2018,MVP,8,totals,,DeMar DeRozan,TOR,32,0,0 0 1 7 6
+2018,MVP,9,totals,,LaMarcus Aldridge,SAS,6,0,0 0 0 1 3
+2018,MVP,10,totals,,Jimmy Butler,MIN,5,0,0 0 1 0 0
+2018,MVP,11,totals,,Stephen Curry,GSW,5,0,0 0 0 1 2
+2018,MVP,12,totals,,Joel Embiid,PHI,4,0,0 0 0 0 4
+2018,MVP,13,totals,,Victor Oladipo,IND,2,0,0 0 0 0 2
+2018,DPOY,1,totals,,Rudy Gobert,UTA,466,89,89 6 3
+2018,DPOY,2,totals,,Joel Embiid,PHI,163,2,2 44 21
+2018,DPOY,3,totals,,Anthony Davis,NOP,139,5,5 25 39
+2018,DPOY,4,totals,,Paul George,OKC,38,2,2 8 4
+2018,DPOY,5,totals,,Al Horford,BOS,37,1,1 7 11
+2018,DPOY,6,totals,,Draymond Green,GSW,20,1,1 3 6
+2018,DPOY,7,totals,,Jrue Holiday,NOP,11,1,1 2 0
+2018,DPOY,8,totals,,Robert Covington,PHI,8,0,0 1 5
+2018,DPOY,9,totals,,Kevin Durant,GSW,7,0,0 2 1
+2018,DPOY,10,totals,,Jaylen Brown,BOS,5,0,0 1 2
+2018,DPOY,11,totals,,Klay Thompson,GSW,4,0,0 1 1
+2018,DPOY,12,totals,,Steven Adams,OKC,3,0,0 1 0
+2018,DPOY,13,totals,,Jimmy Butler,MIN,3,0,0 0 3
+2018,DPOY,14,totals,,Clint Capela,HOU,2,0,0 0 2
+2018,DPOY,15,totals,,Jusuf Nurkic,POR,1,0,0 0 1
+2018,DPOY,16,totals,,Andre Drummond,DET,1,0,0 0 1
+2018,DPOY,17,totals,,Victor Oladipo,IND,1,0,0 0 1
+2018,MIP,1,ballots,58.0,Victor Oladipo,IND,286,57,57 0 1
+2018,MIP,2,ballots,58.0,Clint Capela,HOU,36,1,1 7 10
+2018,MIP,3,ballots,58.0,Andre Drummond,DET,16,0,0 4 4
+2018,MIP,4,ballots,58.0,Steven Adams,OKC,14,0,0 4 2
+2018,MIP,5,ballots,58.0,Jamal Murray,DEN,14,0,0 3 5
+2018,MIP,6,ballots,58.0,Jaylen Brown,BOS,12,0,0 3 3
+2018,MIP,7,ballots,58.0,Clint  Capela,HOU,12,0,0 4 0
+2018,MIP,8,ballots,58.0,Julius Randle,LAL,9,0,0 1 6
+2018,MIP,9,ballots,58.0,Lou Williams,LAL,8,0,0 2 2
+2018,MIP,10,ballots,58.0,Clin t Capela,HOU,6,0,0 2 0
+2018,MIP,11,ballots,58.0,Spencer Dinwiddie,BKN,6,0,0 0 6
+2018,MIP,12,ballots,58.0,Jamal  Murray,DEN,6,0,0 2 0
+2018,MIP,13,ballots,58.0,Spence r Dinwiddie,BKN,6,0,0 2 0
+2018,MIP,14,ballots,58.0,Jayle n Brown,BOS,6,0,0 2 0
+2018,MIP,15,ballots,58.0,Spenc er Dinwiddie,BKN,6,0,0 2 0
+2018,MIP,16,ballots,58.0,C lint Capela,HOU,6,0,0 2 0
+2018,MIP,17,ballots,58.0,Jaylen  Brown,BOS,6,0,0 2 0
+2018,MIP,18,ballots,58.0,Spen cer Dinwiddie,BKN,6,0,0 2 0
+2018,MIP,19,ballots,58.0,DeMar DeRozan,TOR,4,0,0 1 1
+2018,MIP,20,ballots,58.0,Ja ylen Brown,BOS,3,0,0 1 0
+2018,MIP,21,ballots,58.0,Steven  Adams,OKC,3,0,0 1 0
+2018,MIP,22,ballots,58.0,Dejoun te Murray,SAS,3,0,0 1 0
+2018,MIP,23,ballots,58.0,E'Twaun Moore,NOP,3,0,0 0 3
+2018,MIP,24,ballots,58.0,Tobias Harris,LAL,3,0,0 1 0
+2018,MIP,25,ballots,58.0,Steve n Adams,OKC,3,0,0 1 0
+2018,MIP,26,ballots,58.0,Joe Ingles,UTA,3,0,0 0 3
+2018,MIP,27,ballots,58.0,Nikola Jokic,DEN,3,0,0 1 0
+2018,MIP,28,ballots,58.0,Domantas  Sabonis,IND,3,0,0 1 0
+2018,MIP,29,ballots,58.0,E'Twaun  Moore,NOP,3,0,0 1 0
+2018,MIP,30,ballots,58.0,Cl int Capela,HOU,3,0,0 1 0
+2018,MIP,31,ballots,58.0,Tyreke Evans,MEM,3,0,0 1 0
+2018,MIP,32,ballots,58.0,Andre  Drummond,DET,3,0,0 1 0
+2018,MIP,33,ballots,58.0,A ndre Drummond,DET,3,0,0 1 0
+2018,MIP,34,ballots,58.0,Cli nt Capela,HOU,3,0,0 1 0
+2018,MIP,35,ballots,58.0,Kris Dunn,CHI,2,0,0 0 2
+2018,MIP,36,ballots,58.0,Terry Rozier,BOS,2,0,0 0 2
+2018,MIP,37,ballots,58.0,Fred VanVleet,TOR,1,0,0 0 1
+2018,MIP,38,ballots,58.0,Aaron Gordon,ORL,1,0,0 0 1
+2018,MIP,39,ballots,58.0,TJ Warren,PHX,1,0,0 0 1
+2018,MIP,40,ballots,58.0,Taurean Prince,ATL,1,0,0 0 1
+2018,MIP,41,ballots,58.0,Montrezl Harrell,LAL,1,0,0 0 1
+2018,MIP,42,ballots,58.0,Josh Richardson,MIA,1,0,0 0 1
+2018,MIP,43,ballots,58.0,Dejounte Murray,SAS,1,0,0 0 1
+2018,MIP,44,ballots,58.0,Giannis Antetokounmpo,MIL,1,0,0 0 1
+2018,ROY,1,ballots,59.0,Ben Simmons,PHI,272,53,53 2 1
+2018,ROY,2,ballots,59.0,Donovan Mitchell,UTA,102,6,6 24 0
+2018,ROY,3,ballots,59.0,Jayson Tatum,BOS,55,0,0 0 55
+2018,ROY,4,ballots,59.0,Donovan  Mitchell,UTA,36,0,0 12 0
+2018,ROY,5,ballots,59.0,Do novan Mitchell,UTA,12,0,0 4 0
+2018,ROY,6,ballots,59.0,Donova n Mitchell,UTA,12,0,0 4 0
+2018,ROY,7,ballots,59.0,Don ovan Mitchell,UTA,12,0,0 4 0
+2018,ROY,8,ballots,59.0,D onovan Mitchell,UTA,6,0,0 2 0
+2018,ROY,9,ballots,59.0,Ben  Simmons,PHI,6,0,0 2 0
+2018,ROY,10,ballots,59.0,Dono van Mitchell,UTA,6,0,0 2 0
+2018,ROY,11,ballots,59.0,Donov an Mitchell,UTA,3,0,0 1 0
+2018,ROY,12,ballots,59.0,Jayson  Tatum,BOS,3,0,0 1 0
+2018,ROY,13,ballots,59.0,B en Simmons,PHI,3,0,0 1 0
+2018,ROY,14,ballots,59.0,Dennis Smith Jr.,DAL,1,0,0 0 1
+2018,ROY,15,ballots,59.0,Kyle Kuzma,LAL,1,0,0 0 1
+2018,ROY,16,ballots,59.0,Jay son Tatum,BOS,1,0,0 0 1
+2018,SMOY,1,ballots,52.0,Lou Williams,LAC,254,50,50 1 1
+2018,SMOY,2,ballots,52.0,Eric Gordon,HOU,87,1,1 24 10
+2018,SMOY,3,ballots,52.0,Fred VanVleet,TOR,23,1,1 1 15
+2018,SMOY,4,ballots,52.0,Will Barton,DEN,23,0,0 5 8
+2018,SMOY,5,ballots,52.0,Eri c Gordon,HOU,12,0,0 4 0
+2018,SMOY,6,ballots,52.0,Er ic Gordon,HOU,9,0,0 3 0
+2018,SMOY,7,ballots,52.0,Fred Vleet,TOR,8,0,0 1 5
+2018,SMOY,8,ballots,52.0,Fred  VanVleet,TOR,6,0,0 2 0
+2018,SMOY,9,ballots,52.0,Eric  Gordon,HOU,6,0,0 2 0
+2018,SMOY,10,ballots,52.0,Will  Barton,DEN,6,0,0 2 0
+2018,SMOY,11,ballots,52.0,Nikola Mirotic,NOP,4,0,0 1 1
+2018,SMOY,12,ballots,52.0,F red VanVleet,TOR,3,0,0 1 0
+2018,SMOY,13,ballots,52.0,Terry Rozier,BOS,3,0,0 0 3
+2018,SMOY,14,ballots,52.0,Wayne Ellington,MIA,3,0,0 0 3
+2018,SMOY,15,ballots,52.0,Kelly Olynyk,MIA,3,0,0 1 0
+2018,SMOY,16,ballots,52.0,Jor dan Clarkson,CLE,3,0,0 1 0
+2018,SMOY,17,ballots,52.0,Fre d VanVleet,TOR,3,0,0 1 0
+2018,SMOY,18,ballots,52.0,Fr ed VanVleet,TOR,3,0,0 1 0
+2018,SMOY,19,ballots,52.0,Wa yne Ellington,MIA,3,0,0 1 0
+2018,SMOY,20,ballots,52.0,Jordan Clarkson,CLE,2,0,0 0 2
+2018,SMOY,21,ballots,52.0,J.J. Barea,DAL,1,0,0 0 1
+2018,SMOY,22,ballots,52.0,Luc Moute,HOU,1,0,0 0 1
+2018,SMOY,23,ballots,52.0,Marco Belinelli,PHI,1,0,0 0 1
+2018,SMOY,24,ballots,52.0,Kyle Kuzma,IND,1,0,0 0 1
+2018,COY,1,totals,,Dwane Casey,TOR,292,39,39 27 16
+2018,COY,2,totals,,Quin Snyder,UTA,217,21,21 30 22
+2018,COY,3,totals,,Brad Stevens,BOS,203,23,23 23 19
+2018,COY,4,totals,,Brett Brown,PHI,81,11,11 5 11
+2018,COY,5,totals,,Mike D’Antoni,HOU,38,4,4 4 6
+2018,COY,6,totals,,Nate McMillan,IND,37,2,2 6 9
+2018,COY,7,totals,,Terry Stotts,POR,22,0,0 4 10
+2018,COY,8,totals,,Gregg Popovich,SAS,6,0,0 1 3
+2018,COY,9,totals,,Alvin Gentry,NOP,2,0,0 0 2
+2018,COY,10,totals,,Erik Spoelstra,MIA,1,0,0 0 1
+2018,COY,11,totals,,Doc Rivers,LAC,1,0,0 0 1
+2019,DPOY,1,totals,,Rudy Gobert,UTA,411,65,65 27 5
+2019,DPOY,2,totals,,Giannis Antetokounmpo,MIL,280,26,26 44 18
+2019,DPOY,3,totals,,Paul George,OKC,150,6,6 23 51
+2019,DPOY,4,totals,,Joel Embiid,PHI,26,1,1 4 9
+2019,DPOY,5,totals,,Myles Turner,IND,15,0,0 2 9
+2019,DPOY,6,totals,,Draymond Green,GSW,6,1,1 0 1
+2019,DPOY,7,totals,,Kawhi Leonard,TOR,6,1,1 0 1
+2019,DPOY,8,totals,,Marcus Smart,BOS,4,0,0 0 4
+2019,DPOY,9,totals,,Jarrett Allen,BKN,1,0,0 0 1
+2019,DPOY,10,totals,,Patrick Beverley,LAC,1,0,0 0 1
+2019,MIP,1,totals,,Pascal Siakam,TOR,469,86,86 13 0
+2019,MIP,2,totals,,D'Angelo Russell,BKN,255,12,12 59 18
+2019,MIP,3,totals,,De'Aaron Fox,SAC,77,1,1 13 33
+2019,MIP,4,totals,,Buddy Hield,SAC,22,0,0 4 10
+2019,MIP,5,totals,,Nikola Vucevic,ORL,20,0,0 4 8
+2019,MIP,6,totals,,Domantas Sabonis,IND,10,0,0 1 7
+2019,MIP,7,totals,,Montrezl Harrell,LAC,9,0,0 2 3
+2019,MIP,8,totals,,Derrick Rose,MIN,8,1,1 1 0
+2019,MIP,9,totals,,John Collins,ATL,6,0,0 1 3
+2019,MIP,10,totals,,Giannis Antetokounmpo,MIL,4,0,0 1 1
+2019,MIP,11,totals,,Danilo Gallinari,LAC,3,0,0 1 0
+2019,MIP,12,totals,,Malik Beasley,DEN,3,0,0 0 3
+2019,MIP,13,totals,,Paul George,OKC,3,0,0 0 3
+2019,MIP,14,totals,,Thomas Bryant,WAS,2,0,0 0 2
+2019,MIP,15,totals,,Bojan Bogdanovic,IND,2,0,0 0 2
+2019,MIP,16,totals,,Willie Cauley-Stein,SAC,1,0,0 0 1
+2019,MIP,17,totals,,Derrick White,SAS,1,0,0 0 1
+2019,MIP,18,totals,,Bryn Forbes,SAS,1,0,0 0 1
+2019,MIP,19,totals,,Jerami Grant,OKC,1,0,0 0 1
+2019,MIP,20,totals,,Zach LaVine,CHI,1,0,0 0 1
+2019,MIP,21,totals,,Josh Richardson,MIA,1,0,0 0 1
+2019,MIP,22,totals,,Spencer Dinwiddie,BKN,1,0,0 0 1
+2019,MVP,1,ballots,61.0,Giannis Antetokounmpo,MIL,565,46,46 15 0 0 0
+2019,MVP,2,ballots,61.0,James Harden,HOU,472,15,15 46 0 0 0
+2019,MVP,3,ballots,61.0,Paul George,OKC,294,0,0 0 58 1 1
+2019,MVP,4,ballots,61.0,Nikola Jokic,DEN,103,0,0 0 0 30 13
+2019,MVP,5,ballots,61.0,Stephen Curry,GSW,73,0,0 0 0 20 13
+2019,MVP,6,ballots,61.0,Damian Lillard,POR,34,0,0 0 0 4 22
+2019,MVP,7,ballots,61.0,Damian  Lillard,POR,15,0,0 0 3 0 0
+2019,MVP,8,ballots,61.0,Joel Embiid,PHI,14,0,0 0 0 3 5
+2019,MVP,9,ballots,61.0,Kevin Durant,GSW,11,0,0 0 0 3 2
+2019,MVP,10,ballots,61.0,Kawhi Leonard,TOR,2,0,0 0 0 0 2
+2019,MVP,11,ballots,61.0,Rudy Gobert,UTA,1,0,0 0 0 0 1
+2019,MVP,12,ballots,61.0,Russell Westbrook,OKC,1,0,0 0 0 0 1
+2019,MVP,13,ballots,61.0,LeBron James,LAL,1,0,0 0 0 0 1
+2019,ROY,1,totals,,Luka Doncic,DAL,496,98,98 2 0
+2019,ROY,2,totals,,Trae Young,ATL,301,2,2 97 0
+2019,ROY,3,totals,,Deandre Ayton,PHX,66,0,0 1 63
+2019,ROY,4,totals,,Jaren Jackson Jr.,MEM,12,0,0 0 12
+2019,ROY,5,totals,,Collin Sexton,CLE,10,0,0 0 10
+2019,ROY,6,totals,,Shai Gilgeous-Alexander,LAC,7,0,0 0 7
+2019,ROY,7,totals,,Marvin Bagley III,SAC,6,0,0 0 6
+2019,ROY,8,totals,,Josh Okogie,MIN,1,0,0 0 1
+2019,ROY,9,totals,,Mitchell Robinson,NYK,1,0,0 0 1
+2019,SMOY,1,totals,,Lou Williams,LAC,489,96,96 3 0
+2019,SMOY,2,totals,,Domantas Sabonis,IND,190,1,1 52 29
+2019,SMOY,3,totals,,Montrezl Harrell,LAC,142,2,2 30 42
+2019,SMOY,4,totals,,Spencer Dinwiddie,BKN,34,0,0 8 10
+2019,SMOY,5,totals,,Terrence Ross,ORL,12,0,0 3 3
+2019,SMOY,6,totals,,Derrick Rose,MIN,11,0,0 3 2
+2019,SMOY,7,totals,,Dwyane Wade,MIA,8,0,0 1 5
+2019,SMOY,8,totals,,Dennis Schroder,OKC,5,1,1 0 0
+2019,SMOY,9,totals,,Monte Morris,DEN,3,0,0 0 3
+2019,SMOY,10,totals,,Andre Iguodala,GSW,2,0,0 0 2
+2019,SMOY,11,totals,,Jae Crowder,UTA,1,0,0 0 1
+2019,SMOY,12,totals,,Malik Beasley,DEN,1,0,0 0 1
+2019,SMOY,13,totals,,Davis Bertans,SAS,1,0,0 0 1
+2019,SMOY,14,totals,,Ed Davis,BKN,1,0,0 0 1
+2020,DPOY,1,ballots,100.0,Giannis Antetokounmpo,MIL,432,75,75 18 3
+2020,DPOY,2,ballots,100.0,Anthony Davis,LAL,200,14,14 30 40
+2020,DPOY,3,ballots,100.0,Rudy Gobert,UTA,187,6,6 44 25
+2020,DPOY,4,ballots,100.0,Ben Simmons,PHI,32,1,1 5 12
+2020,DPOY,5,ballots,100.0,Bam Adebayo,MIA,17,2,2 1 4
+2020,DPOY,6,ballots,100.0,Marcus Smart,BOS,7,0,0 1 4
+2020,DPOY,7,ballots,100.0,Patrick Beverley,LAC,7,1,1 0 2
+2020,DPOY,8,ballots,100.0,Kawhi Leonard,LAC,5,0,0 0 5
+2020,DPOY,9,ballots,100.0,Andre Drummond,CLE,5,1,1 0 0
+2020,DPOY,10,ballots,100.0,Brook Lopez,MIL,4,0,0 0 4
+2020,DPOY,11,ballots,100.0,Hassan Whiteside,POR,3,0,0 1 0
+2020,DPOY,12,ballots,100.0,Jarrett Allen,BKN,1,0,0 0 1
+2020,MIP,1,ballots,100.0,Brandon Ingram,NOP,326,42,42 35 11
+2020,MIP,2,ballots,100.0,Bam Adebayo,MIA,295,38,38 30 15
+2020,MIP,3,ballots,100.0,Luka Doncic,DAL,101,12,12 10 11
+2020,MIP,4,ballots,100.0,Jayson Tatum,BOS,57,3,3 7 21
+2020,MIP,5,ballots,100.0,Devonte' Graham,CHA,50,2,2 9 13
+2020,MIP,6,ballots,100.0,Shai Gilgeous-Alexander,OKC,21,0,0 5 6
+2020,MIP,7,ballots,100.0,Pascal Siakam,TOR,13,1,1 1 5
+2020,MIP,8,ballots,100.0,Christian Wood,DET,11,1,1 0 6
+2020,MIP,9,ballots,100.0,Trae Young,ATL,10,0,0 2 4
+2020,MIP,10,ballots,100.0,Fred VanVleet,TOR,6,1,1 0 1
+2020,MIP,11,ballots,100.0,Jaylen Brown,BOS,3,0,0 0 3
+2020,MIP,12,ballots,100.0,Davis Bertans,WAS,3,0,0 1 0
+2020,MIP,13,ballots,100.0,Markelle Fultz,ORL,2,0,0 0 2
+2020,MIP,14,ballots,100.0,Duncan Robinson,MIA,1,0,0 0 1
+2020,MIP,15,ballots,100.0,Spencer Dinwiddie,BKN,1,0,0 0 1
+2020,MVP,1,ballots,101.0,Giannis Antetokounmpo,MIL,962,85,85 16 0 0 0
+2020,MVP,2,ballots,101.0,LeBron James,LAL,753,16,16 84 1 0 0
+2020,MVP,3,ballots,101.0,James Harden,HOU,367,0,0 1 64 10 10
+2020,MVP,4,ballots,101.0,Luka Doncic,DAL,200,0,0 0 14 36 22
+2020,MVP,5,ballots,101.0,Kawhi Leonard,LAC,168,0,0 0 9 31 30
+2020,MVP,6,ballots,101.0,Anthony Davis,LAL,82,0,0 0 5 14 15
+2020,MVP,7,ballots,101.0,Chris Paul,OKC,26,0,0 0 3 1 8
+2020,MVP,8,ballots,101.0,Damian Lillard,POR,23,0,0 0 1 4 6
+2020,MVP,9,ballots,101.0,Nikola Jokic,DEN,18,0,0 0 2 2 2
+2020,MVP,10,ballots,101.0,Pascal Siakam,TOR,17,0,0 0 2 1 4
+2020,MVP,11,ballots,101.0,Jimmy Butler,MIA,9,0,0 0 0 2 3
+2020,MVP,12,ballots,101.0,Jayson Tatum,BOS,1,0,0 0 0 0 1
+2020,ROY,1,ballots,100.0,Ja Morant,MEM,498,99,99 1 0
+2020,ROY,2,ballots,100.0,Kendrick Nunn,MIA,204,0,0 56 36
+2020,ROY,3,ballots,100.0,Zion Williamson,NOP,140,1,1 37 24
+2020,ROY,4,ballots,100.0,Brandon Clarke,MEM,50,0,0 6 32
+2020,ROY,5,ballots,100.0,Coby White,CHI,3,0,0 0 3
+2020,ROY,6,ballots,100.0,Terence Davis,TOR,2,0,0 0 2
+2020,ROY,7,ballots,100.0,Eric Paschall,GSW,2,0,0 0 2
+2020,ROY,8,ballots,100.0,R.J. Barrett,NYK,1,0,0 0 1
+2020,SMOY,1,ballots,100.0,Montrezl Harrell,LAC,397,58,58 34 5
+2020,SMOY,2,ballots,100.0,Dennis Schroder,OKC,328,35,35 46 15
+2020,SMOY,3,ballots,100.0,Lou Williams,LAC,127,7,7 15 47
+2020,SMOY,4,ballots,100.0,Christian Wood,DET,17,0,0 3 8
+2020,SMOY,5,ballots,100.0,George Hill,MIL,17,0,0 2 11
+2020,SMOY,6,ballots,100.0,Goran Dragic,MIA,6,0,0 0 6
+2020,SMOY,7,ballots,100.0,Derrick Rose,DET,5,0,0 0 5
+2020,SMOY,8,ballots,100.0,Davis Bertans,WAS,2,0,0 0 2
+2020,SMOY,9,ballots,100.0,Dwight Howard,LAL,1,0,0 0 1
+2021,COY,1,ballots,99.0,Tom Thibodeau,NYK,346,42,42 42 10
+2021,COY,2,ballots,99.0,Monty Williams,PHX,339,45,45 32 18
+2021,COY,3,ballots,99.0,Quin Snyder,UTA,158,10,10 22 42
+2021,COY,4,ballots,99.0,Doc Rivers,PHI,24,2,2 2 8
+2021,COY,5,ballots,99.0,Nate McMillan,ATL,12,0,0 0 12
+2021,COY,6,ballots,99.0,Steve Nash,BKN,7,0,0 1 4
+2021,COY,7,ballots,99.0,Michael Malone,DEN,5,0,0 0 5
+2021,DPOY,1,ballots,99.0,Rudy Gobert,UTA,459,83,83 14 2
+2021,DPOY,2,ballots,99.0,Ben Simmons,PHI,284,15,15 66 11
+2021,DPOY,3,ballots,99.0,Draymond Green,GSW,75,0,0 13 36
+2021,DPOY,4,ballots,99.0,Bam Adebayo,MIA,31,1,1 3 17
+2021,DPOY,5,ballots,99.0,Giannis Antetokounmpo,MIL,12,0,0 0 12
+2021,DPOY,6,ballots,99.0,Clint Capela,ATL,10,0,0 1 7
+2021,DPOY,7,ballots,99.0,Joel Embiid,PHI,7,0,0 2 1
+2021,DPOY,8,ballots,99.0,Jrue Holiday,MIL,6,0,0 0 6
+2021,DPOY,9,ballots,99.0,Myles Turner,IND,3,0,0 0 3
+2021,DPOY,10,ballots,99.0,Jimmy Butler,MIA,2,0,0 0 2
+2021,DPOY,11,ballots,99.0,Kentavious Caldwell-Pope,LAL,1,0,0 0 1
+2021,DPOY,12,ballots,99.0,Matisse Thybulle,PHI,1,0,0 0 1
+2021,MVP,1,ballots,100.0,Nikola Jokic,DEN,961,90,90 8 1 0 0
+2021,MVP,2,ballots,100.0,Joel Embiid,PHI,579,1,1 61 23 8 3
+2021,MVP,3,ballots,100.0,Stephen Curry,GSW,448,5,5 23 31 23 13
+2021,MVP,4,ballots,100.0,Giannis Antetokounmpo,MIL,345,1,1 5 34 40 10
+2021,MVP,5,ballots,100.0,Chris Paul,PHX,138,2,2 2 8 13 25
+2021,MVP,6,ballots,100.0,Luka Doncic,DAL,42,0,0 1 0 7 14
+2021,MVP,7,ballots,100.0,Damian Lillard,POR,38,0,0 0 1 5 18
+2021,MVP,8,ballots,100.0,Julius Randle,NYK,20,0,0 0 1 2 9
+2021,MVP,9,ballots,100.0,Derrick Rose,NYK,10,1,1 0 0 0 0
+2021,MVP,10,ballots,100.0,Rudy Gobert,UTA,8,0,0 0 0 1 5
+2021,MVP,11,ballots,100.0,Russell Westbrook,WAS,5,0,0 0 1 0 0
+2021,MVP,12,ballots,100.0,Ben Simmons,PHI,3,0,0 0 0 1 0
+2021,MVP,13,ballots,100.0,James Harden,BKN,1,0,0 0 0 0 1
+2021,MVP,14,ballots,100.0,LeBron James,LAL,1,0,0 0 0 0 1
+2021,MVP,15,ballots,100.0,Kawhi Leonard,LAC,1,0,0 0 0 0 1
+2021,MIP,1,ballots,99.0,Julius Randle,NYK,488,97,97 1 0
+2021,MIP,2,ballots,99.0,Jerami Grant,DET,140,2,2 33 31
+2021,MIP,3,ballots,99.0,Michael Porter Jr.,DEN,138,0,0 40 18
+2021,MIP,4,ballots,99.0,Christian Wood,HOU,43,0,0 10 13
+2021,MIP,5,ballots,99.0,Zach LaVine,CHI,20,0,0 5 5
+2021,MIP,6,ballots,99.0,Chris Boucher,TOR,10,0,0 3 1
+2021,MIP,7,ballots,99.0,Jaylen Brown,BOS,10,0,0 1 7
+2021,MIP,8,ballots,99.0,Mikal Bridges,PHX,8,0,0 0 8
+2021,MIP,9,ballots,99.0,Clint Capela,ATL,3,0,0 1 0
+2021,MIP,10,ballots,99.0,Darius Garland,CLE,3,0,0 0 3
+2021,MIP,11,ballots,99.0,Nikola Vucevic,CHI,3,0,0 1 0
+2021,MIP,12,ballots,99.0,Luguentz Dort,OKC,3,0,0 1 0
+2021,MIP,13,ballots,99.0,Zion Williamson,NOP,3,0,0 1 0
+2021,MIP,14,ballots,99.0,Jordan Poole,GSW,3,0,0 1 0
+2021,MIP,15,ballots,99.0,Jordan Clarkson,UTA,3,0,0 1 0
+2021,MIP,16,ballots,99.0,Kyle Anderson,MEM,2,0,0 0 2
+2021,MIP,17,ballots,99.0,RJ Barrett,NYK,2,0,0 0 2
+2021,MIP,18,ballots,99.0,Miles Bridges,CHA,2,0,0 0 2
+2021,MIP,19,ballots,99.0,Shai Gilgeous-Alexander,OKC,1,0,0 0 1
+2021,MIP,20,ballots,99.0,Bojan Bogdanovic,UTA,1,0,0 0 1
+2021,MIP,21,ballots,99.0,Terry Rozier,CHA,1,0,0 0 1
+2021,MIP,22,ballots,99.0,T.J. McConnell,IND,1,0,0 0 1
+2021,MIP,23,ballots,99.0,Richaun Holmes,SAC,1,0,0 0 1
+2021,MIP,24,ballots,99.0,Andrew Wiggins,GSW,1,0,0 0 1
+2021,MIP,25,ballots,99.0,Lonzo Ball,NOP,1,0,0 0 1
+2021,ROY,1,ballots,98.0,LaMelo Ball,CHA,460,83,83 15 0
+2021,ROY,2,ballots,98.0,Anthony Edwards,MIN,301,14,14 74 9
+2021,ROY,3,ballots,98.0,Tyrese Haliburton,SAC,113,0,0 9 86
+2021,ROY,4,ballots,98.0,Anthony NewsEdwards,MIN,5,1,1 0 0
+2021,ROY,5,ballots,98.0,Saddiq Bey,DET,3,0,0 0 3
+2021,SMOY,1,ballots,99.0,Jordan Clarkson,UTA,404,65,65 25 4
+2021,SMOY,2,ballots,99.0,Joe Ingles,UTA,267,33,33 31 9
+2021,SMOY,3,ballots,99.0,Derrick Rose,NYK,76,1,1 15 26
+2021,SMOY,4,ballots,99.0,Jalen Brunson,DAL,67,0,0 14 25
+2021,SMOY,5,ballots,99.0,Tim Hardaway Jr.,DAL,24,0,0 5 9
+2021,SMOY,6,ballots,99.0,Montrezl Harrell,LAL,14,0,0 3 5
+2021,SMOY,7,ballots,99.0,Carmelo Anthony,POR,8,0,0 1 5
+2021,SMOY,8,ballots,99.0,Chris Boucher,TOR,7,0,0 1 4
+2021,SMOY,9,ballots,99.0,Bobby Portis,MIL,6,0,0 0 6
+2021,SMOY,10,ballots,99.0,Enes Kanter,POR,5,0,0 1 2
+2021,SMOY,11,ballots,99.0,T.J. McConnell,IND,4,0,0 1 1
+2021,SMOY,12,ballots,99.0,Shake Milton,PHI,3,0,0 1 0
+2021,SMOY,13,ballots,99.0,Miles Bridges,CHA,3,0,0 1 0
+2021,SMOY,14,ballots,99.0,Thaddeus Young,CHI,2,0,0 0 2
+2021,SMOY,15,ballots,99.0,Facundo Campazzo,DEN,1,0,0 0 1
+2022,DPOY,1,ballots,99.0,Marcus Smart,BOS,257,37,37 18 18
+2022,DPOY,2,ballots,99.0,Mikal Bridges,PHX,199,22,22 24 17
+2022,DPOY,3,ballots,99.0,Rudy Gobert,UTA,135,12,12 18 21
+2022,DPOY,4,ballots,99.0,Bam Adebayo,MIA,123,12,12 17 12
+2022,DPOY,5,ballots,99.0,Jaren Jackson Jr.,MEM,99,10,10 11 16
+2022,DPOY,6,ballots,99.0,Giannis Antetokounmpo,MIL,58,5,5 7 12
+2022,DPOY,7,ballots,99.0,Robert Williams III,BOS,8,1,1 1 0
+2022,DPOY,8,ballots,99.0,Jrue Holiday,MIL,6,0,0 2 0
+2022,DPOY,9,ballots,99.0,Al Horford,BOS,3,0,0 1 0
+2022,DPOY,10,ballots,99.0,Draymond Green,GSW,2,0,0 0 2
+2022,DPOY,11,ballots,99.0,Matisse Thybulle,PHI,1,0,0 0 1
+2022,MIP,1,ballots,99.0,Ja Morant,MEM,216,37,37 9 4
+2022,MIP,2,ballots,99.0,Dejounte Murray,SAS,183,20,20 20 23
+2022,MIP,3,ballots,99.0,Darius Garland,CLE,175,11,11 35 15
+2022,MIP,4,ballots,99.0,Jordan Poole,GSW,130,15,15 12 19
+2022,MIP,5,ballots,99.0,Desmond Bane,MEM,74,7,7 10 9
+2022,MIP,6,ballots,99.0,Tyrese Maxey,PHI,52,6,6 5 7
+2022,MIP,7,ballots,99.0,Miles Bridges,CHA,38,3,3 4 11
+2022,MIP,8,ballots,99.0,Anfernee Simons,POR,13,0,0 3 4
+2022,MIP,9,ballots,99.0,Robert Williams III,BOS,4,0,0 0 4
+2022,MIP,10,ballots,99.0,Jaren Jackson Jr.,MEM,3,0,0 1 0
+2022,MIP,11,ballots,99.0,Jalen Brunson,DAL,2,0,0 0 2
+2022,MIP,12,ballots,99.0,Max Strus,MIA,1,0,0 0 1
+2022,MVP,1,ballots,99.0,Nikola Jokic,DEN,855,63,63 27 6 2 0
+2022,MVP,2,ballots,99.0,Joel Embiid,PHI,699,26,26 38 34 1 0
+2022,MVP,3,ballots,99.0,Giannis Antetokounmpo,MIL,592,9,9 32 52 6 0
+2022,MVP,4,ballots,99.0,Devin Booker,PHX,211,0,0 1 7 49 22
+2022,MVP,5,ballots,99.0,Luka Doncic,DAL,145,0,0 1 0 32 42
+2022,MVP,6,ballots,99.0,Jayson Tatum,BOS,43,0,0 0 0 8 19
+2022,MVP,7,ballots,99.0,Ja Morant,MEM,10,0,0 0 0 1 7
+2022,MVP,8,ballots,99.0,Nikola Times-PicayuneJokic,DEN,10,1,1 0 0 0 0
+2022,MVP,9,ballots,99.0,Stephen Curry,GSW,4,0,0 0 0 0 4
+2022,MVP,10,ballots,99.0,Chris Paul,PHX,2,0,0 0 0 0 2
+2022,MVP,11,ballots,99.0,DeMar DeRozan,CHI,1,0,0 0 0 0 1
+2022,MVP,12,ballots,99.0,LeBron James,LAL,1,0,0 0 0 0 1
+2022,MVP,13,ballots,99.0,Kevin Durant,BKN,1,0,0 0 0 0 1
+2022,ROY,1,ballots,99.0,Scottie Barnes,TOR,375,48,48 42 9
+2022,ROY,2,ballots,99.0,Evan Mobley,CLE,358,42,42 46 10
+2022,ROY,3,ballots,99.0,Cade Cunningham,DET,152,9,9 10 77
+2022,ROY,4,ballots,99.0,Jalen Green,HOU,3,0,0 1 0
+2022,ROY,5,ballots,99.0,Franz Wagner,ORL,2,0,0 0 2
+2022,ROY,6,ballots,99.0,Herbert Jones,NOP,1,0,0 0 1
+2022,SMOY,1,ballots,99.0,Tyler Herro,MIA,483,95,95 2 2
+2022,SMOY,2,ballots,99.0,Kevin Love,CLE,211,3,3 57 25
+2022,SMOY,3,ballots,99.0,Cameron Johnson,PHX,127,1,1 27 41
+2022,SMOY,4,ballots,99.0,Jordan Clarkson,UTA,27,0,0 7 6
+2022,SMOY,5,ballots,99.0,Luke Kennard,LAC,12,0,0 2 6
+2022,SMOY,6,ballots,99.0,Bogdan Bogdanovic,ATL,10,0,0 3 1
+2022,SMOY,7,ballots,99.0,Kelly Oubre Jr.,CHA,9,0,0 0 9
+2022,SMOY,8,ballots,99.0,De'Anthony Melton,MEM,4,0,0 0 4
+2022,SMOY,9,ballots,99.0,Montrezl Harrell,CHA,3,0,0 1 0
+2022,SMOY,10,ballots,99.0,Immanuel Quickley,NYK,2,0,0 0 2
+2022,SMOY,11,ballots,99.0,Tyus Jones,MEM,1,0,0 0 1
+2022,SMOY,12,ballots,99.0,Brandon Clarke,MEM,1,0,0 0 1
+2022,SMOY,13,ballots,99.0,Maxi Kleber,DAL,1,0,0 0 1
+2022,COY,1,ballots,99.0,Monty Williams,PHX,453,80,80 17 2
+2022,COY,2,ballots,99.0,Taylor Jenkins,MEM,269,17,17 55 19
+2022,COY,3,ballots,99.0,Erik Spoelstra,MIA,72,1,1 16 19
+2022,COY,4,ballots,99.0,Ime Udoka,BOS,46,1,1 5 26
+2022,COY,5,ballots,99.0,J.B. Bickerstaff,CLE,25,0,0 3 16
+2022,COY,6,ballots,99.0,Jason Kidd,DAL,9,0,0 1 6
+2022,COY,7,ballots,99.0,Tyronn Lue,LAC,9,0,0 1 6
+2022,COY,8,ballots,99.0,Nick Nurse,TOR,4,0,0 1 1
+2022,COY,9,ballots,99.0,Chris Finch,MIN,4,0,0 0 4
+2023,CLUTCH,1,ballots,100.0,DeAaron Fox,SAC,460,91,91 1 2
+2023,CLUTCH,2,ballots,100.0,Jimmy Butler,MIA,104,1,1 24 27
+2023,CLUTCH,3,ballots,100.0,DeMar DeRozan,CHI,80,0,0 20 20
+2023,CLUTCH,4,ballots,100.0,Jalen Brunson,NYK,77,1,1 17 21
+2023,CLUTCH,5,ballots,100.0,Joel Embiid,PHI,51,1,1 13 7
+2023,CLUTCH,6,ballots,100.0,Donovan Mitchell,CLE,32,1,1 8 3
+2023,CLUTCH,7,ballots,100.0,Shai Gilgeous-Alexander,OKC,31,1,1 7 5
+2023,CLUTCH,8,ballots,100.0,Luka Doncic,DAL,17,1,1 3 3
+2023,CLUTCH,9,ballots,100.0,Stephen Curry,GSW,15,2,2 1 2
+2023,CLUTCH,10,ballots,100.0,Jayson Tatum,BOS,10,0,0 2 4
+2023,CLUTCH,11,ballots,100.0,Damian Lillard,POR,10,0,0 3 1
+2023,CLUTCH,12,ballots,100.0,Kyrie Irving,DAL,7,1,1 0 2
+2023,CLUTCH,13,ballots,100.0,Nikola Jokic,DEN,5,0,0 1 2
+2023,CLUTCH,14,ballots,100.0,Julius Randle,NYK,1,0,0 0 1
+2023,DPOY,1,totals,,Jaren Jackson Jr.,Memphis,391,56,56 35 6
+2023,DPOY,2,totals,,Brook Lopez,Milwaukee,309,31,31 47 13
+2023,DPOY,3,totals,,Evan Mobley,Cleveland,101,8,8 10 31
+2023,DPOY,4,totals,,Draymond Green,Golden State,34,3,3 2 13
+2023,DPOY,5,totals,,Bam Adebayo,Miami,18,1,1 2 7
+2023,DPOY,6,totals,,Giannis Antetokounmpo,Milwaukee,14,0,0 2 8
+2023,DPOY,7,totals,,O.G. Anunoby,Toronto,8,0,0 1 5
+2023,DPOY,8,totals,,Jrue Holiday,Milwaukee,8,0,0 1 5
+2023,DPOY,9,totals,,Joel Embiid,Philadelphia,7,1,1 0 2
+2023,DPOY,10,totals,,Nic Claxton,Brooklyn,7,0,0 0 7
+2023,DPOY,11,totals,,Alex Caruso,Chicago,2,0,0 0 2
+2023,DPOY,12,totals,,Jimmy Butler,Miami,1,0,0 0 1
+2023,MIP,1,ballots,100.0,Lauri Markkanen,UTA,430,69,69 27 4
+2023,MIP,2,ballots,100.0,Shai Gilgeous-Alexander,OKC,289,24,24 54 7
+2023,MIP,3,ballots,100.0,Jalen Brunson,NYK,91,4,4 11 38
+2023,MIP,4,ballots,100.0,Mikal Bridges,BKN,33,1,1 1 25
+2023,MIP,5,ballots,100.0,Nic Claxton,BKN,22,0,0 4 10
+2023,MIP,6,ballots,100.0,Tyrese Haliburton,IND,16,1,1 1 8
+2023,MIP,7,ballots,100.0,Trey Murphy III,NOP,8,1,1 0 3
+2023,MIP,8,ballots,100.0,Kevon Looney,GSW,3,0,0 1 0
+2023,MIP,9,ballots,100.0,De'Aaron Fox,SAC,3,0,0 1 0
+2023,MIP,10,ballots,100.0,Austin Reaves,LAL,2,0,0 0 2
+2023,MIP,11,ballots,100.0,Malik Monk,SAC,1,0,0 0 1
+2023,MIP,12,ballots,100.0,Aaron Gordon,DEN,1,0,0 0 1
+2023,MIP,13,ballots,100.0,Jaren Jackson Jr.,MEM,1,0,0 0 1
+2023,ROY,1,ballots,100.0,Paolo Banchero,ORL,494,98,98 1 1
+2023,ROY,2,ballots,100.0,Jalen Williams,OKC,241,0,0 75 16
+2023,ROY,3,ballots,100.0,Walker Kessler,UTA,114,2,2 17 53
+2023,ROY,4,ballots,100.0,Bennedict Mathurin,IND,27,0,0 4 15
+2023,ROY,5,ballots,100.0,Keegan Murray,SAC,21,0,0 3 12
+2023,ROY,6,ballots,100.0,Jaden Ivey,DET,3,0,0 0 3
+2023,SMOY,1,totals,,Malcolm Brogdon,Boston,408,60,60 35 3
+2023,SMOY,2,totals,,Immanuel Quickley,New York,326,34,34 49 9
+2023,SMOY,3,totals,,Bobby Portis Jr.,Milwaukee,97,6,6 10 37
+2023,SMOY,4,totals,,Norman Powell,LA Clippers,24,0,0 1 21
+2023,SMOY,5,totals,,Malik Monk,Sacramento,22,0,0 3 13
+2023,SMOY,6,totals,,Tyus Jones,Memphis,10,0,0 1 7
+2023,SMOY,7,totals,,Austin Reaves,Los Angeles Lakers,9,0,0 1 6
+2023,SMOY,8,totals,,Bennedict Mathurin,Indiana,2,0,0 0 2
+2023,SMOY,9,totals,,Russell Westbrook,LA Clippers,1,0,0 0 1
+2023,SMOY,10,totals,,Christian Wood,Dallas,1,0,0 0 1
+2023,COY,1,ballots,100.0,Mike Brown,SAC,495,99,99 0 0
+2023,COY,2,ballots,100.0,Mark Daigneault,OKC,164,0,0 48 20
+2023,COY,3,ballots,100.0,Joe Mazzulla,BOS,77,0,0 18 23
+2023,COY,4,ballots,100.0,J.B. Bickerstaff,CLE,52,0,0 13 13
+2023,COY,5,ballots,100.0,Michael Malone,DEN,30,0,0 7 9
+2023,COY,6,ballots,100.0,Mike Budenholzer,MIL,27,0,0 5 12
+2023,COY,7,ballots,100.0,Tom Thibodeau,NYK,16,0,0 3 7
+2023,COY,8,ballots,100.0,Jacque Vaughn,BKN,16,0,0 3 7
+2023,COY,9,ballots,100.0,Will Hardy,UTA,7,0,0 1 4
+2023,COY,10,ballots,100.0,Taylor Jenkins,MEM,5,0,0 1 2
+2023,COY,11,ballots,100.0,Mike AppealBrown,SAC,5,1,1 0 0
+2023,COY,12,ballots,100.0,Darvin Ham,LAL,3,0,0 1 0
+2023,COY,13,ballots,100.0,Tyronn Lue,LAC,1,0,0 0 1
+2023,COY,14,ballots,100.0,Willie Green,NOP,1,0,0 0 1
+2023,COY,15,ballots,100.0,Doc Rivers,PHI,1,0,0 0 1
+2023,MVP,1,totals,,Joel Embiid,Philadelphia,915,73,73 25 2 0 0
+2023,MVP,2,totals,,Nikola Jokić,Denver,674,15,15 52 32 0 0
+2023,MVP,3,totals,,Giannis Antetokounmpo,Milwaukee,606,12,12 23 65 0 0
+2023,MVP,4,totals,,Jayson Tatum,Boston,280,0,0 0 1 89 8
+2023,MVP,5,totals,,Shai Gilgeous-Alexander,Oklahoma City,46,0,0 0 0 6 28
+2023,MVP,6,totals,,Donovan Mitchell,Cleveland,30,0,0 0 0 1 27
+2023,MVP,7,totals,,Domantas Sabonis,Sacramento,27,0,0 0 0 1 24
+2023,MVP,8,totals,,Luka Dončić,Dallas,10,0,0 0 0 2 4
+2023,MVP,9,totals,,Stephen Curry,Golden State,5,0,0 0 0 1 2
+2023,MVP,10,totals,,Jimmy Butler,Miami,3,0,0 0 0 0 3
+2023,MVP,11,totals,,De'Aaron Fox,Sacramento,2,0,0 0 0 0 2
+2023,MVP,12,totals,,Jalen Brunson,New York,1,0,0 0 0 0 1
+2023,MVP,13,totals,,Ja Morant,Memphis,1,0,0 0 0 0 1
+2024,CLUTCH,1,ballots,98.0,Stephen Curry,Golden State,298,45,45 18 19
+2024,CLUTCH,2,ballots,98.0,DeMar Derozan,Chicago,272,34,34 27 21
+2024,CLUTCH,3,ballots,98.0,Shai Gilgeous-Alexander,Oklahoma City,157,11,11 28 18
+2024,CLUTCH,4,ballots,98.0,Nikola Jokic,Denver,85,4,4 14 23
+2024,CLUTCH,5,ballots,98.0,Jalen Brunson,New York,26,2,2 4 4
+2024,CLUTCH,6,ballots,98.0,Luka Doncic,Dallas,16,1,1 2 5
+2024,CLUTCH,7,ballots,98.0,Kyrie Irving,Dallas,14,0,0 4 2
+2024,CLUTCH,8,ballots,98.0,Anthony Edwards,Minnesota,6,1,1 0 1
+2024,CLUTCH,9,ballots,98.0,LeBron James,Los Angeles,3,0,0 1 0
+2024,CLUTCH,10,ballots,98.0,Damian Lillard,Milwaukee,2,0,0 0 2
+2024,CLUTCH,11,ballots,98.0,Lakers Jalen Williams,Oklahoma City,1,0,0 0 1
+2024,CLUTCH,12,ballots,98.0,Giannis Antetokounmpo,Milwaukee,1,0,0 0 1
+2024,CLUTCH,13,ballots,98.0,De'Aaron Fox,Sacramento,1,0,0 0 1
+2024,DPOY,1,ballots,97.0,Rudy Gobert,Minnesota,415,71,71 20 0
+2024,DPOY,2,ballots,97.0,Victor Wembanyama,San Antonio,234,18,18 44 12
+2024,DPOY,3,ballots,97.0,Bam Adebayo,Miami,86,3,3 15 26
+2024,DPOY,4,ballots,97.0,Anthony Davis,Los Angeles,83,4,4 10 33
+2024,DPOY,5,ballots,97.0,Herbert Jones,New Orleans,14,0,0 2 8
+2024,DPOY,6,ballots,97.0,Lakers Rudy Gobert,Minnesota,12,0,0 4 0
+2024,DPOY,7,ballots,97.0,Jrue Holiday,Boston,7,1,1 0 2
+2024,DPOY,8,ballots,97.0,Derrick White,Boston,5,0,0 1 2
+2024,DPOY,9,ballots,97.0,Lakers Victor Wembanyama,San Antonio,5,0,0 0 5
+2024,DPOY,10,ballots,97.0,Lakers Bam Adebayo,Miami,5,0,0 0 5
+2024,DPOY,11,ballots,97.0,Giannis Antetokounmpo,Milwaukee,3,0,0 1 0
+2024,DPOY,12,ballots,97.0,Domantas Sabonis,Sacramento,1,0,0 0 1
+2024,DPOY,13,ballots,97.0,Jalen Suggs,Orlando,1,0,0 0 1
+2024,DPOY,14,ballots,97.0,Jarrett Allen,Cleveland,1,0,0 0 1
+2024,DPOY,15,ballots,97.0,Alex Caruso,Chicago,1,0,0 0 1
+2024,MVP,1,ballots,99.0,Nikola Jokic,Denver,926,79,79 18 2 0 0
+2024,MVP,2,ballots,99.0,Shai Gilgeous-Alexander,Oklahoma City,640,15,15 40 40 3 1
+2024,MVP,3,ballots,99.0,Luka Doncic,Dallas,566,4,4 36 50 8 0
+2024,MVP,4,ballots,99.0,Giannis Antetokounmpo,Milwaukee,192,1,1 1 4 44 23
+2024,MVP,5,ballots,99.0,Jalen Brunson,New York,142,0,0 3 1 28 32
+2024,MVP,6,ballots,99.0,Jayson Tatum,Boston,86,0,0 0 1 14 39
+2024,MVP,7,ballots,99.0,Anthony Edwards,Minnesota,18,0,0 1 1 1 3
+2024,MVP,8,ballots,99.0,Domantas Sabonis,Sacramento,3,0,0 0 0 1 0
+2024,MVP,9,ballots,99.0,Kevin Durant,Phoenix,1,0,0 0 0 0 1
+2024,MIP,1,ballots,98.0,Tyrese Maxey,Philadelphia,319,51,51 18 10
+2024,MIP,2,ballots,98.0,Coby White,Chicago,305,32,32 43 16
+2024,MIP,3,ballots,98.0,Alperen Sengun,Houston,92,6,6 14 20
+2024,MIP,4,ballots,98.0,Jalen Williams,Oklahoma City,79,5,5 11 21
+2024,MIP,5,ballots,98.0,Deni Avdija,Washington,24,1,1 5 4
+2024,MIP,6,ballots,98.0,Jalen Brunson,New York,24,3,3 1 6
+2024,MIP,7,ballots,98.0,Cam Thomas,Brooklyn,16,0,0 2 10
+2024,MIP,8,ballots,98.0,Jalen Suggs,Orlando,11,0,0 2 5
+2024,MIP,9,ballots,98.0,Duncan Robinson,Miami,4,0,0 0 4
+2024,MIP,10,ballots,98.0,Shai Gilgeous-Alexander,Oklahoma City,3,0,0 1 0
+2024,MIP,11,ballots,98.0,Devin Vassell,San Antonio,3,0,0 1 0
+2024,MIP,12,ballots,98.0,Grayson Allen,Phoenix,1,0,0 0 1
+2024,MIP,13,ballots,98.0,Aaron Nesmith,Indiana,1,0,0 0 1
+2024,ROY,1,totals,,Victor Wembanyama,San Antonio,495,99,99 0 0
+2024,ROY,2,totals,,Chet Holmgren,Oklahoma City,295,0,0 98 1
+2024,ROY,3,totals,,Brandon Miller,Charlotte,86,0,0 1 83
+2024,ROY,4,totals,,Jaime Jaquez Jr.,Miami,10,0,0 0 10
+2024,ROY,5,totals,,Brandin Podziemski,Golden State,4,0,0 0 4
+2024,ROY,6,totals,,Dereck Lively II,Dallas,1,0,0 0 1
+2024,SMOY,1,ballots,99.0,Naz Reid,Minnesota,352,45,45 39 10
+2024,SMOY,2,ballots,99.0,Malik Monk,Sacramento,342,43,43 39 10
+2024,SMOY,3,ballots,99.0,Bobby Portis,Milwaukee,81,5,5 10 26
+2024,SMOY,4,ballots,99.0,Norman Powell,LA Clippers,65,2,2 7 34
+2024,SMOY,5,ballots,99.0,Bogdan Bogdanovic,Atlanta,40,4,4 3 11
+2024,SMOY,6,ballots,99.0,Jose Alvarado,New Orleans,3,0,0 1 0
+2024,SMOY,7,ballots,99.0,T.J. McConnell,Indiana,2,0,0 0 2
+2024,SMOY,8,ballots,99.0,Russell Westbrook,LA Clippers,2,0,0 0 2
+2024,SMOY,9,ballots,99.0,Tim Hardaway Jr.,Dallas,1,0,0 0 1
+2024,SMOY,10,ballots,99.0,Jonathan Isaac,Orlando,1,0,0 0 1
+2024,SMOY,11,ballots,99.0,Jaime Jaquez Jr.,Miami,1,0,0 0 1
+2024,SMOY,12,ballots,99.0,Bojan Bogdanovic,New York,1,0,0 0 1
+2024,COY,1,ballots,98.0,Mark Daigneault,Oklahoma City,468,88,88 9 1
+2024,COY,2,ballots,98.0,Jamahl Mosley,Orlando,155,4,4 35 30
+2024,COY,3,ballots,98.0,Chris Finch,Minnesota,105,1,1 23 31
+2024,COY,4,ballots,98.0,Joe Mazzulla,Boston,78,2,2 16 20
+2024,COY,5,ballots,98.0,Tom Thibodeau,New York,59,2,2 14 7
+2024,COY,6,ballots,98.0,Erik Spoelstra,Miami,6,1,1 0 1
+2024,COY,7,ballots,98.0,Ime Udoka,Houston,6,0,0 1 3
+2024,COY,8,ballots,98.0,Rick Carlisle,Indiana,2,0,0 0 2
+2024,COY,9,ballots,98.0,J.B. Bickerstaff,Cleveland,1,0,0 0 1
+2024,COY,10,ballots,98.0,Michael Malone,Denver,1,0,0 0 1
+2024,COY,11,ballots,98.0,Jason Kidd,Dallas,1,0,0 0 1
+2025,CLUTCH,1,ballots,85.0,Jalen Brunson,New York,349,56,56 22 3
+2025,CLUTCH,2,ballots,85.0,Nikola Jokić,Denver,273,25,25 47 7
+2025,CLUTCH,3,ballots,85.0,Anthony Edwards,Minnesota,45,2,2 5 20
+2025,CLUTCH,4,ballots,85.0,Trae Young,Atlanta,36,0,0 4 24
+2025,CLUTCH,5,ballots,85.0,Stephen Curry,Golden State,24,1,1 3 10
+2025,CLUTCH,6,ballots,85.0,Darius Garland,Cleveland,13,0,0 0 13
+2025,CLUTCH,7,ballots,85.0,LeBron James,Los Angeles,13,1,1 2 2
+2025,CLUTCH,8,ballots,85.0,Lakers Jalen Brunson,New York,4,0,0 1 1
+2025,CLUTCH,9,ballots,85.0,Donovan Mitchell,Cleveland,3,0,0 1 0
+2025,CLUTCH,10,ballots,85.0,Shai Gilgeous-Alexander,Oklahoma City,2,0,0 0 2
+2025,CLUTCH,11,ballots,85.0,Lakers Nikola Jokić,Denver,1,0,0 0 1
+2025,CLUTCH,12,ballots,85.0,Jayson Tatum,Boston,1,0,0 0 1
+2025,CLUTCH,13,ballots,85.0,Kyrie Irving,Dallas,1,0,0 0 1
+2025,DPOY,1,ballots,84.0,Evan Mobley,Cleveland,238,29,29 26 15
+2025,DPOY,2,ballots,84.0,Dyson Daniels,Atlanta,155,19,19 14 18
+2025,DPOY,3,ballots,84.0,Draymond Green,Golden State,143,15,15 17 17
+2025,DPOY,4,ballots,84.0,Luguentz Dort,Oklahoma City,95,10,10 10 15
+2025,DPOY,5,ballots,84.0,Amen Thompson,Houston,76,7,7 10 11
+2025,DPOY,6,ballots,84.0,Ivica Zubac,LA Clippers,34,4,4 4 2
+2025,DPOY,7,ballots,84.0,Jaren Jackson Jr.,Memphis,5,0,0 0 5
+2025,DPOY,8,ballots,84.0,Toumani Camara,Portland,4,0,0 1 1
+2025,DPOY,9,ballots,84.0,Shai Gilgeous-Alexander,Oklahoma City,3,0,0 1 0
+2025,DPOY,10,ballots,84.0,Derrick White,Boston,3,0,0 1 0
+2025,MIP,1,ballots,85.0,Dyson Daniels,Atlanta,277,38,38 28 3
+2025,MIP,2,ballots,85.0,Ivica Zubac,LA Clippers,162,19,19 18 13
+2025,MIP,3,ballots,85.0,Cade Cunningham,Detroit,94,11,11 9 12
+2025,MIP,4,ballots,85.0,Christian Braun,Denver,91,8,8 10 21
+2025,MIP,5,ballots,85.0,Austin Reaves,Los Angeles,39,3,3 4 12
+2025,MIP,6,ballots,85.0,Evan Mobley,Cleveland,21,2,2 3 2
+2025,MIP,7,ballots,85.0,Amen Thompson,Houston,18,1,1 2 7
+2025,MIP,8,ballots,85.0,Deni Avdija,Portland,17,1,1 3 3
+2025,MIP,9,ballots,85.0,Josh Giddey,Chicago,13,1,1 2 2
+2025,MIP,10,ballots,85.0,Tyler Herro,Miami,9,1,1 1 1
+2025,MIP,11,ballots,85.0,Payton Pritchard,Boston,5,0,0 1 2
+2025,MIP,12,ballots,85.0,Lakers Tyler Herro,Miami,4,0,0 1 1
+2025,MIP,13,ballots,85.0,Lakers Christian Braun,Denver,4,0,0 1 1
+2025,MIP,14,ballots,85.0,Lakers Dyson Daniels,Atlanta,3,0,0 1 0
+2025,MIP,15,ballots,85.0,OG Anunoby,New York,3,0,0 1 0
+2025,MIP,16,ballots,85.0,Lakers Ivica Zubac,LA Clippers,2,0,0 0 2
+2025,MIP,17,ballots,85.0,Toumani Camara,Portland,2,0,0 0 2
+2025,MIP,18,ballots,85.0,Jalen Williams,Oklahoma City,1,0,0 0 1
+2025,MVP,1,ballots,64.0,Shai Gilgeous-Alexander,Oklahoma City,637,63,63 1 0 0 0
+2025,MVP,2,ballots,64.0,Nikola Jokić,Denver,451,1,1 63 0 0 0
+2025,MVP,3,ballots,64.0,Giannis Antetokounmpo,Milwaukee,291,0,0 0 53 8 2
+2025,MVP,4,ballots,64.0,Jayson Tatum,Boston,205,0,0 0 10 51 2
+2025,MVP,5,ballots,64.0,Donovan Mitchell,Cleveland,53,0,0 0 1 3 39
+2025,MVP,6,ballots,64.0,LeBron James,Los Angeles,11,0,0 0 0 1 8
+2025,MVP,7,ballots,64.0,Anthony Edwards,Minnesota,7,0,0 0 0 1 4
+2025,MVP,8,ballots,64.0,Cade Cunningham,Detroit,4,0,0 0 0 0 4
+2025,MVP,9,ballots,64.0,Jalen Brunson,New York,1,0,0 0 0 0 1
+2025,MVP,10,ballots,64.0,Stephen Curry,Golden State,1,0,0 0 0 0 1
+2025,MVP,11,ballots,64.0,LakersGiannis Antetokounmpo,Milwaukee,1,0,0 0 0 0 1
+2025,MVP,12,ballots,64.0,Evan Mobley,Cleveland,1,0,0 0 0 0 1
+2025,MVP,13,ballots,64.0,James Harden,LA Clippers,1,0,0 0 0 0 1
+2025,ROY,1,ballots,25.0,Stephon Castle,San Antonio,117,22,22 2 1
+2025,ROY,2,ballots,25.0,Jaylen Wells,Memphis,62,2,2 17 1
+2025,ROY,3,ballots,25.0,Zaccharie Risacher,Atlanta,26,1,1 0 21
+2025,ROY,4,ballots,25.0,Alex Sarr,Washington,15,0,0 5 0
+2025,ROY,5,ballots,25.0,Zach Edey,Memphis,5,0,0 1 2
+2025,SMOY,1,ballots,85.0,Payton Pritchard,Boston,389,71,71 10 4
+2025,SMOY,2,ballots,85.0,Malik Beasley,Detroit,233,10,10 56 15
+2025,SMOY,3,ballots,85.0,Ty Jerome,Cleveland,72,1,1 11 34
+2025,SMOY,4,ballots,85.0,De'Andre Hunter,Cleveland,32,2,2 2 16
+2025,SMOY,5,ballots,85.0,Naz Reid,Minnesota,27,1,1 4 10
+2025,SMOY,6,ballots,85.0,Nickeil Alexander-Walker,Minnesota,7,0,0 2 1
+2025,SMOY,7,ballots,85.0,Russell Westbrook,Denver,4,0,0 0 4
+2025,SMOY,8,ballots,85.0,Alex Caruso,Oklahoma City,1,0,0 0 1
+2025,COY,1,ballots,84.0,Kenny Atkinson,Cleveland,337,50,50 27 6
+2025,COY,2,ballots,84.0,J.B. Bickerstaff,Detroit,250,24,24 38 16
+2025,COY,3,ballots,84.0,Ime Udoka,Houston,103,7,7 11 35
+2025,COY,4,ballots,84.0,Mark Daigneault,Oklahoma City,36,2,2 6 8
+2025,COY,5,ballots,84.0,Tyronn Lue,LA Clippers,27,1,1 2 16
+2025,COY,6,ballots,84.0,JJ Redick,Los Angeles,3,0,0 0 3
+2026,CLUTCH,1,ballots,83.0,Shai Gilgeous-Alexander,Oklahoma City,404,80,80 1 1
+2026,CLUTCH,2,ballots,83.0,Jamal Murray,Denver,105,0,0 30 15
+2026,CLUTCH,3,ballots,83.0,Anthony Edwards,Minnesota,91,0,0 25 16
+2026,CLUTCH,4,ballots,83.0,Cade Cunningham,Detroit,35,0,0 9 8
+2026,CLUTCH,5,ballots,83.0,Jalen Brunson,New York,34,2,2 6 6
+2026,CLUTCH,6,ballots,83.0,Nikola Jokić,Denver,31,1,1 5 11
+2026,CLUTCH,7,ballots,83.0,Luka Dončić,Los Angeles,18,0,0 4 6
+2026,CLUTCH,8,ballots,83.0,Tyrese Maxey,Philadelphia,18,0,0 2 12
+2026,CLUTCH,9,ballots,83.0,Kevin Durant,Houston,4,0,0 0 4
+2026,CLUTCH,10,ballots,83.0,Kawhi Leonard,LA Clippers,3,0,0 1 0
+2026,CLUTCH,11,ballots,83.0,Lakers Nikola Jokić,Denver,2,0,0 0 2
+2026,CLUTCH,12,ballots,83.0,Lakers Jalen Brunson,New York,1,0,0 0 1
+2026,CLUTCH,13,ballots,83.0,Lakers Cade Cunningham,Detroit,1,0,0 0 1
+2026,MIP,1,ballots,84.0,Nickeil Alexander-Walker,Atlanta,332,56,56 15 7
+2026,MIP,2,ballots,84.0,Jalen Duren,Detroit,220,19,19 36 17
+2026,MIP,3,ballots,84.0,Deni Avdija,Portland,120,7,7 21 22
+2026,MIP,4,ballots,84.0,Neemias Queta,Boston,27,0,0 3 18
+2026,MIP,5,ballots,84.0,Jalen Johnson,Atlanta,20,1,1 4 3
+2026,MIP,6,ballots,84.0,Ryan Rollins,Milwaukee,19,1,1 2 8
+2026,MIP,7,ballots,84.0,Reed Sheppard,Houston,8,0,0 2 2
+2026,MIP,8,ballots,84.0,Jamal Murray,Denver,3,0,0 1 0
+2026,MIP,9,ballots,84.0,Collin Gillespie,Phoenix,2,0,0 0 2
+2026,MIP,10,ballots,84.0,Stephon Castle,San Antonio,1,0,0 0 1
+2026,MIP,11,ballots,84.0,Victor Wembanyama,San Antonio,1,0,0 0 1
+2026,MIP,12,ballots,84.0,Amen Thompson,Houston,1,0,0 0 1
+2026,MIP,13,ballots,84.0,Jaden McDaniels,Minnesota,1,0,0 0 1
+2026,MIP,14,ballots,84.0,Naji Marshall,Dallas,1,0,0 0 1
+2026,MVP,1,ballots,84.0,Shai Gilgeous-Alexander,Oklahoma City,795,72,72 10 1 0 0
+2026,MVP,2,ballots,84.0,Nikola Jokić,Denver,541,8,8 43 32 0 0
+2026,MVP,3,ballots,84.0,Victor Wembanyama,San Antonio,461,4,4 29 41 4 1
+2026,MVP,4,ballots,84.0,Luka Dončić,Los Angeles,213,0,0 1 6 52 20
+2026,MVP,5,ballots,84.0,Cade Cunningham,Detroit,50,0,0 0 2 11 7
+2026,MVP,6,ballots,84.0,Jaylen Brown,Boston,49,0,0 1 1 11 4
+2026,MVP,7,ballots,84.0,Lakers Cade Cunningham,Detroit,29,0,0 0 0 0 29
+2026,MVP,8,ballots,84.0,Lakers Jaylen Brown,Boston,22,0,0 0 0 0 22
+2026,MVP,9,ballots,84.0,Lakers Victor Wembanyama,San Antonio,15,0,0 0 0 5 0
+2026,MVP,10,ballots,84.0,Lakers Shai Gilgeous-Alexander,Oklahoma City,5,0,0 0 1 0 0
+2026,MVP,11,ballots,84.0,Lakers Nikola Jokić,Denver,3,0,0 0 0 1 0
+2026,MVP,12,ballots,84.0,Lakers Kawhi Leonard,LA Clippers,1,0,0 0 0 0 1
+2026,ROY,1,ballots,84.0,Cooper Flagg,Dallas,350,49,49 35 0
+2026,ROY,2,ballots,84.0,Kon Knueppel,Charlotte,320,35,35 48 1
+2026,ROY,3,ballots,84.0,VJ Edgecombe,Philadelphia,81,0,0 1 78
+2026,ROY,4,ballots,84.0,Dylan Harper,San Antonio,4,0,0 0 4
+2026,ROY,5,ballots,84.0,Cedric Coward,Memphis,1,0,0 0 1
+2026,SMOY,1,ballots,83.0,Keldon Johnson,San Antonio,337,54,54 21 4
+2026,SMOY,2,ballots,83.0,Jaime Jaquez Jr.,Miami,270,27,27 43 6
+2026,SMOY,3,ballots,83.0,Tim Hardaway Jr.,Denver,37,0,0 6 19
+2026,SMOY,4,ballots,83.0,Naz Reid,Minnesota,36,1,1 3 22
+2026,SMOY,5,ballots,83.0,Ajay Mitchell,Oklahoma City,27,0,0 4 15
+2026,SMOY,6,ballots,83.0,Reed Sheppard,Houston,25,0,0 5 10
+2026,SMOY,7,ballots,83.0,Isaiah Stewart,Detroit,6,1,1 0 1
+2026,SMOY,8,ballots,83.0,Ayo Dosunmu,Minnesota,4,0,0 1 1
+2026,SMOY,9,ballots,83.0,Sandro Mamukelashvili,Toronto,2,0,0 0 2
+2026,SMOY,10,ballots,83.0,Dylan Harper,San Antonio,2,0,0 0 2
+2026,SMOY,11,ballots,83.0,Jamal Shead,Toronto,1,0,0 0 1
+2026,COY,1,ballots,84.0,Joe Mazzulla,Boston,330,53,53 19 8
+2026,COY,2,ballots,84.0,J.B. Bickerstaff,Detroit,259,24,24 42 13
+2026,COY,3,ballots,84.0,Mitch Johnson,San Antonio,112,7,7 15 32
+2026,COY,4,ballots,84.0,Charles Lee,Charlotte,26,0,0 5 11
+2026,COY,5,ballots,84.0,Jordan Ott,Phoenix,10,0,0 1 7
+2026,COY,6,ballots,84.0,Mark Daigneault,Oklahoma City,10,0,0 2 4
+2026,COY,7,ballots,84.0,JJ Redick,Los Angeles,3,0,0 0 3
+2026,COY,8,ballots,84.0,Quin Snyder,Atlanta,2,0,0 0 2
+2026,COY,9,ballots,84.0,Darko Rajaković,Toronto,1,0,0 0 1
+2026,COY,10,ballots,84.0,Kenny Atkinson,Cleveland,1,0,0 0 1
+2026,COY,11,ballots,84.0,Tiago Splitter,Portland,1,0,0 0 1
+2026,COY,12,ballots,84.0,Tyronn Lue,LA Clippers,1,0,0 0 1

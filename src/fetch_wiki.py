@@ -14,7 +14,7 @@ from teams import TEAMS
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "raw" / "wiki"
 URL = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/"
-       "all-access/user/{article}/daily/20180801/20260920")
+       "all-access/user/{article}/daily/20150701/20260920")
 # Wikimedia asks API clients to identify themselves
 HEADERS = {"User-Agent": "sloan-interviews-research/0.1 (academic sports analytics project)"}
 
