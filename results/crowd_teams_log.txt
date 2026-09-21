@@ -58,3 +58,19 @@ media_buzz         0.315  0.036
 fan_buzz           0.424  0.038
 crowd_buzz         0.412  0.038
 stats_baseline     0.673  0.037
+
+=== BEYOND STATS: rest-of-season win % ~ point diff so far + crowd signal
+    (11 seasons x 3 checkpoints x 30 teams; standard errors clustered by team)
+  media_buzz  coef -0.0412  p = 0.011
+  fan_buzz    coef -0.0395  p = 0.063
+  media_attn  coef -0.4245  p = 0.163
+  fan_attn    coef -0.0389  p = 0.864
+  media_tone  coef +0.0065  p = 0.603
+
+=== BEYOND STATS: playoff series winner ~ point-diff gap + crowd gap (logit, n=165)
+  stats only: pseudo-R2 0.180
+  media_buzz  coef -1.054  p = 0.006  pseudo-R2 0.221
+  fan_buzz    coef -0.587  p = 0.152  pseudo-R2 0.193
+  media_attn  coef +4.296  p = 0.517  pseudo-R2 0.185
+  fan_attn    coef +6.084  p = 0.306  pseudo-R2 0.188
+  media_tone  coef +0.235  p = 0.436  pseudo-R2 0.185

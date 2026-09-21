@@ -118,8 +118,7 @@ def beyond_stats(games, news, wiki, rs):
                            **{f"d_{c}": snap[c][a] - snap[c][b] for c in SIGNALS}})
     P, S = pd.concat(panel), pd.DataFrame(series)
     rows = []
-    log("
-=== BEYOND STATS: rest-of-season win % ~ point diff so far + crowd signal")
+    log("\n=== BEYOND STATS: rest-of-season win % ~ point diff so far + crowd signal")
     log("    (11 seasons x 3 checkpoints x 30 teams; standard errors clustered by team)")
     for c in SIGNALS:
         d = P.dropna(subset=[c, "pdiff", "ros"])
@@ -127,8 +126,7 @@ def beyond_stats(games, news, wiki, rs):
         rows.append({"target": "rest_of_season_win_pct", "signal": c, "coef": m.params[c], "p": m.pvalues[c], "n": int(m.nobs)})
         log(f"  {c:11s} coef {m.params[c]:+.4f}  p = {m.pvalues[c]:.3f}")
     base = smf.logit("a_wins ~ d_pdiff", data=S).fit(disp=0)
-    log(f"
-=== BEYOND STATS: playoff series winner ~ point-diff gap + crowd gap (logit, n={len(S)})")
+    log(f"\n=== BEYOND STATS: playoff series winner ~ point-diff gap + crowd gap (logit, n={len(S)})")
     log(f"  stats only: pseudo-R2 {base.prsquared:.3f}")
     for c in SIGNALS:
         m = smf.logit(f"a_wins ~ d_pdiff + d_{c}", data=S.dropna()).fit(disp=0)
