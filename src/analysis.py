@@ -41,7 +41,7 @@ def log(*a):
 # ---------------------------------------------------------------- 1. hype residuals
 HYPE_TARGETS = [("tone_7d", "hype_tone"),      # what journalists write (GDELT tone)
                 ("wiki_7d", "hype_wiki"),      # how much the public looks the team up
-                ("log_attn_7d", "hype_attn")]  # how much journalists write (GDELT volume)
+                ("attn_7d", "hype_attn")]      # how much journalists write (GDELT log volume)
 
 
 def available(tg):
@@ -50,8 +50,6 @@ def available(tg):
 
 def add_hype(tg):
     tg = tg.copy()
-    if "attn_7d" in tg and tg.attn_7d.notna().any():
-        tg["log_attn_7d"] = np.log1p(tg.attn_7d)
     rhs = " + ".join(PERF) + " + C(season)"
     for target, name in available(tg):
         train = tg[tg.season < HOLDOUT].dropna(subset=PERF + [target])
@@ -76,7 +74,7 @@ def add_hype(tg):
 
 def to_games(tg):
     """Home-side rows with home-minus-away media differences."""
-    media = [c for c in tg.columns if c.startswith(("hype_", "tone_", "attn_", "log_attn", "wiki_"))]
+    media = [c for c in tg.columns if c.startswith(("hype_", "tone_", "attn_", "outlets_", "wiki_"))]
     home = tg[tg.is_home == 1].set_index("espn_id")
     away = tg[tg.is_home == 0].set_index("espn_id")
     g = home.copy()

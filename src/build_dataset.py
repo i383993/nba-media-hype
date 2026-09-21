@@ -54,42 +54,36 @@ def implied_prob(ml):
 
 # ---------------------------------------------------------------- media
 def load_media():
-    frames = []
-    for abbr in TEAMS:
-        tone_p, vol_p = RAW / "gdelt" / f"{abbr}_tone.csv", RAW / "gdelt" / f"{abbr}_volraw.csv"
-        if not tone_p.exists():
-            continue
-        m = pd.read_csv(tone_p)
-        if vol_p.exists():
-            m = m.merge(pd.read_csv(vol_p), on="date", how="outer")
-        else:  # volume not downloaded yet: equal-weight days, no attention measure
-            m["articles"] = np.where(m.tone.notna(), 1.0, 0.0)
-            m["total_monitored"] = np.nan
-        m["team"] = abbr
-        frames.append(m)
-    if not frames:
+    """News coverage per team from GDELT via BigQuery (data/raw/gdelt_bq.csv).
+
+    tone_*     article-weighted average tone        (what journalists say)
+    attn_*     log number of articles               (how much they write)
+    outlets_*  log number of distinct outlets       (how many voices)
+    tone_sd_*  average within-day spread of tone    (low = everyone says the same thing)
+    Home-minus-away differences cancel GDELT's overall volume changes over time.
+    """
+    p = RAW / "gdelt_bq.csv"
+    if not p.exists():
         return None
-    m = pd.concat(frames, ignore_index=True)
-    m["date"] = pd.to_datetime(m.date)
-    m = m.sort_values(["team", "date"])
-    # attention = team's share of all monitored news that day (per 100k articles)
-    m["attention"] = 1e5 * m.articles / m.total_monitored
+    m = pd.read_csv(p, parse_dates=["day"]).rename(columns={"day": "date"})
     feats = []
     for team, g in m.groupby("team"):
-        g = g.set_index("date").asfreq("D")
-        g["team"] = team
-        w = g.articles.fillna(0)
-        tone_x_w = (g.tone * w).fillna(0)
-        for k in (3, 7, 28):
-            g[f"tone_{k}d"] = tone_x_w.rolling(k, min_periods=1).sum() / w.rolling(k, min_periods=1).sum()
-            g[f"attn_{k}d"] = g.attention.fillna(0).rolling(k, min_periods=1).mean()
-        # abnormal attention: last week vs the previous month
-        g["attn_surge"] = np.log1p(g.attn_7d) - np.log1p(g.attn_28d)
-        g["tone_shift"] = g.tone_7d - g.tone_28d
-        # shift by one day: a game on day D only sees coverage up to D-1
-        cols = [c for c in g.columns if c.startswith(("tone_", "attn_"))]
-        g[cols] = g[cols].shift(1)
-        feats.append(g.reset_index()[["date", "team"] + cols])
+        g = g.set_index("date").sort_index().asfreq("D")
+        n = g.articles.fillna(0)
+        tone_x_n = (g.tone_mean * n).fillna(0)
+        sd_x_n = (g.tone_sd * n).fillna(0)
+        f = pd.DataFrame(index=g.index)
+        for k in (7, 28):
+            w = n.rolling(k, min_periods=1).sum()
+            f[f"tone_{k}d"] = tone_x_n.rolling(k, min_periods=1).sum() / w
+            f[f"tone_sd_{k}d"] = sd_x_n.rolling(k, min_periods=1).sum() / w
+            f[f"attn_{k}d"] = np.log1p(n.rolling(k, min_periods=1).mean())
+            f[f"outlets_{k}d"] = np.log1p(g.outlets.fillna(0).rolling(k, min_periods=1).mean())
+        f["attn_surge"] = f.attn_7d - f.attn_28d          # coverage spike vs the past month
+        f["tone_shift"] = f.tone_7d - f.tone_28d
+        f = f.shift(1)  # a game on day D only sees coverage through D-1
+        f["team"] = team
+        feats.append(f.reset_index())
     out = pd.concat(feats, ignore_index=True)
     out["date"] = out.date.dt.date
     return out
