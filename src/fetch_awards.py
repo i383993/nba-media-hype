@@ -9,6 +9,7 @@ Output: data/raw/awards.csv
 import io
 import re
 import time
+import unicodedata
 from pathlib import Path
 
 import pandas as pd
@@ -49,32 +50,41 @@ CITIES = ["Atlanta", "Boston", "Brooklyn", "Charlotte", "Chicago", "Cleveland", 
           "Memphis", "Miami", "Milwaukee", "Minnesota", "New Orleans", "New York", "Oklahoma City",
           "Orlando", "Philadelphia", "Phoenix", "Portland", "Sacramento", "San Antonio", "Toronto",
           "Utah", "Washington"]
-CITY_SPLIT = re.compile(r",\s*(" + "|".join(sorted(map(re.escape, CITIES), key=len, reverse=True)) + r")\b\s*")
+CITY_SPLIT = re.compile(r",\s*(" + "|".join(sorted(map(re.escape, CITIES), key=len, reverse=True)) + r")\s*")
+SUFFIXES = {"Jr.", "Sr.", "II", "III", "IV"}
 
 
 def parse_city_ballots(text, award):
-    """2024-25+ ballots: 'Voter, Affiliation First Last, City First Last, City ...'."""
+    """2024-25+ ballots: 'Voter, Affiliation First Last, City First Last, City ...'.
+
+    The PDF glues each team city to the next player ("San AntonioZaccharie Risacher"), and
+    newspapers such as "Sacramento Bee" also look like cities, so only the LAST n city
+    matches on a line (n = ballot depth) are treated as picks.
+    """
     pts = POINTS.get(award, DEFAULT_POINTS)
-    lines = []
-    for line in text.splitlines():
-        parts = CITY_SPLIT.split(line)  # [lead+pick1, city1, pick2, city2, ...]
-        if len(parts) == 2 * len(pts) + 1:
-            lines.append(parts)
-    # names seen in places 2..n are clean; use them to cut pick 1 off the voter/affiliation text
-    known = {parts[i].strip() for parts in lines for i in range(2, len(parts) - 1, 2)}
-    totals, n_ballots = {}, 0
-    for parts in lines:
-        lead = parts[0].strip()
-        first = next((k for k in sorted(known, key=len, reverse=True) if lead.endswith(" " + k)), None)
-        if first is None:
+    n = len(pts)
+    parsed = []
+    for line in text.splitlines()[1:]:
+        ms = list(CITY_SPLIT.finditer(line))
+        if len(ms) < n:
             continue
-        picks = [(first, parts[1])] + [(parts[i].strip(), parts[i + 1]) for i in range(2, len(parts) - 1, 2)]
+        ms = ms[-n:]
+        names = [line[ms[i - 1].end():ms[i].start()].strip() for i in range(1, n)]
+        parsed.append((line[:ms[0].start()].strip(), names, [m.group(1) for m in ms]))
+    # names in places 2..n are clean; use them to cut the 1st-place name off "Voter, Affiliation Name"
+    known = {nm for _, names, _ in parsed for nm in names}
+    totals, n_ballots = {}, 0
+    for lead, names, cities in parsed:
+        first = next((k for k in sorted(known, key=len, reverse=True) if lead.endswith(" " + k)), None)
+        if first is None:  # 1st-place player never appears lower on any ballot: take the last 2-3 words
+            w = lead.split()
+            first = " ".join(w[-3:] if w[-1] in SUFFIXES else w[-2:])
         n_ballots += 1
-        for place, key in enumerate(picks):
-            totals.setdefault(key, [0] * len(pts))[place] += 1
-    return [{"name": n, "team": tm, "points": sum(c * p for c, p in zip(v, pts)),
+        for place, key in enumerate(zip([first] + names, cities)):
+            totals.setdefault(key, [0] * n)[place] += 1
+    return [{"name": nm, "team": tm, "points": sum(c * p for c, p in zip(v, pts)),
              "first_place": v[0], "place_votes": " ".join(map(str, v))}
-            for (n, tm), v in totals.items()], n_ballots
+            for (nm, tm), v in totals.items()], n_ballots
 
 
 def fetch_text(url):
@@ -134,22 +144,27 @@ def main(first=2018, last=2026):
                 kind = "ballots" if "selections" in fname else "totals"
                 by_award.setdefault(award, {})[kind] = url
         for award, files in by_award.items():
-            rows, n_ballots, source = [], 0, None
-            if "ballots" in files:
+            candidates = []
+            if "totals" in files:  # official totals table (text PDFs only)
+                rows = parse(fetch_text(files["totals"]))
+                candidates.append(("totals", rows))
+            if "ballots" in files:  # rebuild from each voter's ballot
                 text = fetch_text(files["ballots"])
-                rows, n_ballots = parse_ballots(text, award)
-                if n_ballots < 50:
-                    rows, n_ballots = parse_city_ballots(text, award)
-                source = "ballots"
-            if n_ballots < 50 and "totals" in files:  # ballot layout not parsed: use official totals
-                rows, n_ballots, source = parse(fetch_text(files["totals"])), None, "totals"
+                for name, fn in (("ballots", parse_ballots), ("ballots", parse_city_ballots)):
+                    rows, _ = fn(text, award)
+                    candidates.append((name, rows))
+            # completeness = number of ballots the rows account for (sum of 1st-place votes)
+            source, rows = max(candidates, key=lambda c: sum(r["first_place"] or 0 for r in c[1]),
+                               default=(None, []))
+            n_ballots = sum(r["first_place"] or 0 for r in rows)
             for rank, row in enumerate(sorted(rows, key=lambda x: -x["points"]), start=1):
                 out.append({"season": end_year, "award": award, "rank": rank,
                             "source": source, "ballots": n_ballots, **row})
             top = max(rows, key=lambda x: x["points"]) if rows else {}
-            print(season, award, source, n_ballots, len(rows), "cands; winner", top.get("name"), top.get("points"), flush=True)
+            print(season, award, source, f"{n_ballots} ballots", len(rows), "cands; winner", top.get("name"), top.get("points"), flush=True)
             time.sleep(1)
     df = pd.DataFrame(out)
+    df["name_key"] = df.name.map(lambda n: unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().strip())
     df.to_csv(ROOT / "data" / "raw" / "awards.csv", index=False)
     print("saved", len(df))
 

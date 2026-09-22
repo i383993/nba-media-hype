@@ -1,0 +1,72 @@
+people-level coverage: 253 players
+[narrative persona] point-diff explains R2 = 0.150 of media tone (residual = the persona)
+
+=== Each persona alone: Spearman correlation with rest-of-season / final win %
+              preseason    25%    50%    75%  n_covered
+persona                                                
+recency             NaN -0.080 -0.021  0.159        810
+narrative           NaN -0.056  0.058 -0.023        783
+prestige          0.218  0.195  0.166  0.154       1044
+bandwagon           NaN  0.083  0.046 -0.116        810
+anchoring           NaN -0.022  0.005  0.046        810
+star_power        0.261  0.258  0.214  0.084        933
+polarization     -0.081  0.052  0.053  0.132       1044
+
+=== Learned combiner (fit on seasons < 2026, checkpoints 25/50/75%, n=575)
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept                0.4991      0.014     36.620      0.000       0.472       0.526
+C(checkpoint)[T.50%]     0.0027      0.009      0.313      0.755      -0.014       0.020
+C(checkpoint)[T.75%]     0.0047      0.011      0.440      0.660      -0.016       0.025
+recency                  0.0093      0.007      1.413      0.158      -0.004       0.022
+narrative                0.0010      0.011      0.095      0.924      -0.020       0.022
+prestige                 0.0090      0.017      0.516      0.606      -0.025       0.043
+bandwagon               -0.0045      0.004     -1.022      0.307      -0.013       0.004
+anchoring                0.0026      0.010      0.266      0.790      -0.017       0.022
+star_power               0.0257      0.012      2.146      0.032       0.002       0.049
+polarization             0.0053      0.011      0.499      0.617      -0.016       0.026
+========================================================================================
+
+=== Sanity check: correlation between persona z-scores (collinearity risk)
+              recency  narrative  prestige  bandwagon  anchoring  star_power  polarization
+recency          1.00       0.05     -0.06      -0.06      -0.04       -0.06         -0.08
+narrative        0.05       1.00      0.22       0.01       0.08        0.04         -0.04
+prestige        -0.06       0.22      1.00      -0.03       0.26        0.55          0.32
+bandwagon       -0.06       0.01     -0.03       1.00      -0.05        0.07         -0.01
+anchoring       -0.04       0.08      0.26      -0.05       1.00        0.12          0.09
+star_power      -0.06       0.04      0.55       0.07       0.12        1.00          0.10
+polarization    -0.08      -0.04      0.32      -0.01       0.09        0.10          1.00
+
+=== Sanity check: leave-one-season-out CV of the learned combiner (checkpoints 25/50/75%)
+  held out 2019: Spearman = 0.089 (n=73)
+  held out 2020: Spearman = 0.148 (n=70)
+  held out 2021: Spearman = -0.210 (n=84)
+  held out 2022: Spearman = 0.004 (n=87)
+  held out 2023: Spearman = 0.392 (n=87)
+  held out 2024: Spearman = 0.321 (n=87)
+  held out 2025: Spearman = 0.319 (n=87)
+  held out 2026: Spearman = 0.249 (n=87)
+  mean across seasons: 0.164  (2026's single-season result was 0.75 -- compare against this more honest estimate)
+
+=== Ensembles vs. stats and vs. the old single-number crowd score
+    Spearman correlation with rest-of-season / final win %, by checkpoint
+  crowd_naive HOLDOUT 2026 @75%: Spearman = 0.176 (n=30)
+  crowd_learned HOLDOUT 2026 @75%: Spearman = 0.442 (n=29)
+               preseason    25%    50%    75%
+predictor                                    
+crowd_naive        0.181  0.130  0.157  0.133
+crowd_learned        NaN  0.196  0.244  0.186
+
+=== Playoff series: share where the ensemble favoured the eventual winner
+  crowd_naive: all seasons 0.607 (n=135), holdout 2026 0.733 (n=15)
+  crowd_learned: all seasons 0.556 (n=135), holdout 2026 0.533 (n=15)
+
+=== Coverage: % of team-checkpoints with a non-missing value, by persona
+recency          75.0
+narrative        72.5
+prestige         96.7
+bandwagon        75.0
+anchoring       100.0
+star_power       86.4
+polarization     96.7
