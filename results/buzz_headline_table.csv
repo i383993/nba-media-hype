@@ -1,0 +1,5 @@
+Target,Controls,Coefficient,p-value,n
+Rest-of-season win %,Point differential only,-0.0412346751590405,0.011454936549337,941
+Playoff series won,Point differential only,-1.054470526584028,0.0062331885730862,151
+Rest-of-season win %,+ last-10-game form,-0.0405350248387463,0.0128153341618299,941
+Playoff series won,+ last-10-game form,-1.051913771988062,0.0064527219941997,151

@@ -6,3 +6,14 @@ data/raw/*_log.txt
 # third-party data without a license: downloaded by src/fetch_yahoo.py instead of redistributed
 data/raw/odds_yahoo/
 oved_prior.txt
+
+# stray leftover from the abandoned free GDELT API attempt (superseded by gdelt_bq.csv)
+data/raw/gdelt/
+# derived table from the earlier betting-market phase; contains Yahoo-scraped columns
+# with no clear redistribution license. Regenerate locally with: python build_dataset.py
+data/team_games.csv
+# player-level Wikipedia pageviews: download still in progress and unused by the
+# current analysis (persona_model.py's star_power uses gdelt_people.csv only).
+# Regenerate with: python fetch_wiki_people.py
+data/raw/wiki_people/
+data/raw/wiki_titles.csv

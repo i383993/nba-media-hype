@@ -32,3 +32,28 @@
 - Public betting % (Yahoo) exists only for 4 seasons.
 - 2019-20 bubble games have no real home court.
 - ESPN line = consensus near game time, not a guaranteed closing line (validated above).
+
+## 2026-09-23 (final thesis for the Oct 1 abstract)
+
+After the crowd-vs-stats work (standings/champion/playoff-series, all null or negative for
+the crowd) and the persona/mixture-of-experts model, the headline finding is a specific piece
+of the persona work's `beyond_stats()` regression: **media_buzz** (a team's attention relative
+to its own trailing 3-year baseline, not raw attention share) is a significant NEGATIVE
+predictor of both rest-of-season win% (p=0.011) and playoff series wins (p=0.006), and the
+effect survives adding a last-10-game recency control almost unchanged (p=0.013, p=0.006) --
+ruling out "it's just hot streaks regressing" as the explanation. Effect sizes: ~1 fewer win
+per 82 games per SD of buzz; playoff-series win odds cut to ~57% of baseline per typical
+buzz gap between two teams.
+
+This became the paper's thesis ("Buzz Kill") rather than the broader "does the crowd predict
+outcomes" framing, because the broader version is mostly null on small samples (9-11 champion
+picks) while this is well-powered (941 team-checkpoints, 151 playoff series), robust, and
+gives a concrete, novel, counterintuitive claim. The MVP naive-pick check (0/9 seasons, LeBron
+James picked 6/9 regardless of who won -- src/mvp_check.py) is kept as the introduction's hook,
+not a standalone result.
+
+Repo cleanup for the public push: removed data/raw/gdelt/ (stray leftover from the abandoned
+free GDELT API), untracked data/team_games.csv (contains Yahoo-scraped columns with no clear
+redistribution license -- the earlier betting-phase build_dataset.py can still regenerate it
+locally), and excluded data/raw/wiki_people/ + wiki_titles.csv (download incomplete, ~72/303
+players, and unused by the current analysis -- star_power uses gdelt_people.csv only).
