@@ -92,8 +92,15 @@ def crowd_snapshot(news, wiki, date, days=WINDOW):
 SIGNALS = ["media_buzz", "fan_buzz", "media_attn", "fan_attn", "media_tone"]
 
 
+def last10_margin(games_so_far):
+    """Last-10-game average point differential per team, sorted by date."""
+    return games_so_far.sort_values("date").groupby("team").margin.apply(lambda s: s.tail(10).mean())
+
+
 def beyond_stats(games, news, wiki, rs):
-    """Regress outcomes on the stats baseline PLUS one crowd signal at a time."""
+    """Regress outcomes on the stats baseline PLUS one crowd signal at a time.
+    Also adds a `recency` control (last-10-game form vs. season-to-date form) to check
+    that any buzz effect isn't just short hot streaks driving both buzz and reversion."""
     panel, series = [], []
     for season in sorted(rs.season.unique()):
         reg = rs[rs.season == season]
@@ -102,19 +109,21 @@ def beyond_stats(games, news, wiki, rs):
             d = start + (end - start) * frac
             snap = crowd_snapshot(news, wiki, d)
             so_far, rest = reg[reg.date < d], reg[reg.date >= d]
-            panel.append(snap.assign(pdiff=so_far.groupby("team").margin.mean(),
-                                     ros=rest.groupby("team").win.mean(),
+            pdiff = so_far.groupby("team").margin.mean()
+            recency = last10_margin(so_far) - pdiff
+            panel.append(snap.assign(pdiff=pdiff, recency=recency, ros=rest.groupby("team").win.mean(),
                                      checkpoint=frac, season=season).reset_index(names="team"))
         post = games[(games.season == season) & (games.season_type == "post-season")].copy()
         if post.empty:
             continue
         post["pair"] = post.apply(lambda r: tuple(sorted((r.home, r.away))), axis=1)
         pdiff = reg.groupby("team").margin.mean()
+        recency = last10_margin(reg) - pdiff  # form over the LAST 10 regular-season games
         for (a, b), s in post.groupby("pair"):
             a_wins = ((s.home == a) & (s.home_pts > s.away_pts)).sum() + ((s.away == a) & (s.away_pts > s.home_pts)).sum()
             snap = crowd_snapshot(news, wiki, s.date.min(), days=14)
             series.append({"season": season, "a_wins": int(a_wins > len(s) - a_wins),
-                           "d_pdiff": pdiff[a] - pdiff[b],
+                           "d_pdiff": pdiff[a] - pdiff[b], "d_recency": recency[a] - recency[b],
                            **{f"d_{c}": snap[c][a] - snap[c][b] for c in SIGNALS}})
     P, S = pd.concat(panel), pd.DataFrame(series)
     rows = []
@@ -123,16 +132,35 @@ def beyond_stats(games, news, wiki, rs):
     for c in SIGNALS:
         d = P.dropna(subset=[c, "pdiff", "ros"])
         m = smf.ols(f"ros ~ pdiff + {c} + C(checkpoint)", data=d).fit(cov_type="cluster", cov_kwds={"groups": d.team})
-        rows.append({"target": "rest_of_season_win_pct", "signal": c, "coef": m.params[c], "p": m.pvalues[c], "n": int(m.nobs)})
+        rows.append({"target": "rest_of_season_win_pct", "signal": c, "control": "pdiff",
+                     "coef": m.params[c], "p": m.pvalues[c], "n": int(m.nobs)})
         log(f"  {c:11s} coef {m.params[c]:+.4f}  p = {m.pvalues[c]:.3f}")
     base = smf.logit("a_wins ~ d_pdiff", data=S).fit(disp=0)
     log(f"\n=== BEYOND STATS: playoff series winner ~ point-diff gap + crowd gap (logit, n={len(S)})")
     log(f"  stats only: pseudo-R2 {base.prsquared:.3f}")
     for c in SIGNALS:
         m = smf.logit(f"a_wins ~ d_pdiff + d_{c}", data=S.dropna()).fit(disp=0)
-        rows.append({"target": "playoff_series", "signal": c, "coef": m.params[f"d_{c}"],
-                     "p": m.pvalues[f"d_{c}"], "n": int(m.nobs), "pseudo_r2": m.prsquared})
+        rows.append({"target": "playoff_series", "signal": c, "control": "pdiff",
+                     "coef": m.params[f"d_{c}"], "p": m.pvalues[f"d_{c}"], "n": int(m.nobs), "pseudo_r2": m.prsquared})
         log(f"  {c:11s} coef {m.params[f'd_{c}']:+.3f}  p = {m.pvalues[f'd_{c}']:.3f}  pseudo-R2 {m.prsquared:.3f}")
+
+    # ---- robustness: does the effect survive controlling for recent (last-10-game) form too? ----
+    log("\n=== ROBUSTNESS: same regressions, now ALSO controlling for last-10-game form (recency)")
+    log("    (checks the buzz effect isn't just short hot streaks driving both buzz and reversion)")
+    base_r = smf.logit("a_wins ~ d_pdiff + d_recency", data=S).fit(disp=0)
+    log(f"  playoff series, stats(+recency) only: pseudo-R2 {base_r.prsquared:.3f}")
+    for c in SIGNALS:
+        d = P.dropna(subset=[c, "pdiff", "recency", "ros"])
+        m = smf.ols(f"ros ~ pdiff + recency + {c} + C(checkpoint)", data=d).fit(
+            cov_type="cluster", cov_kwds={"groups": d.team})
+        rows.append({"target": "rest_of_season_win_pct", "signal": c, "control": "pdiff+recency",
+                     "coef": m.params[c], "p": m.pvalues[c], "n": int(m.nobs)})
+        m2 = smf.logit(f"a_wins ~ d_pdiff + d_recency + d_{c}", data=S.dropna()).fit(disp=0)
+        rows.append({"target": "playoff_series", "signal": c, "control": "pdiff+recency",
+                     "coef": m2.params[f"d_{c}"], "p": m2.pvalues[f"d_{c}"], "n": int(m2.nobs),
+                     "pseudo_r2": m2.prsquared})
+        log(f"  {c:11s} rest-of-season: coef {m.params[c]:+.4f} p={m.pvalues[c]:.3f}   "
+            f"| playoff series: coef {m2.params[f'd_{c}']:+.3f} p={m2.pvalues[f'd_{c}']:.3f}")
     pd.DataFrame(rows).to_csv(RES / "crowd_teams_beyond_stats.csv", index=False)
 
 
