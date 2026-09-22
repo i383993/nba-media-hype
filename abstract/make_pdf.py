@@ -38,15 +38,13 @@ METHODS = ('We built two independent public "crowd" measures for every NBA team 
     'win percentage and playoff series outcomes on buzz, controlling for both season-to-date point '
     'differential and recent (last-10-game) form, with standard errors clustered by team.')
 
-RESULTS = ('Raw crowd attention underperforms simple stats at picking champions, ranking '
-    'standings, and picking playoff winners. But media buzz specifically is a significant, robust '
-    'negative predictor of performance: controlling for current point differential and recent '
-    'form, a one-standard-deviation buzz surge is associated with roughly one fewer win over an '
-    '82-game season (p=0.013, n=941 team-checkpoints) and cuts a playoff team&rsquo;s odds of '
-    'winning its series to about 57% of baseline (p=0.006, n=151 series) &mdash; see Table 1. The '
-    'effect is unchanged by controlling for hot-streak form, ruling out simple mean reversion as '
-    'the explanation. Fan-attention buzz shows the same direction but falls short of significance '
-    '(p=0.066).')
+RESULTS = ('Media buzz is a significant, robust negative predictor of performance: controlling '
+    'for current point differential and recent form, a one-standard-deviation buzz surge is '
+    'associated with roughly one fewer win over an 82-game season (p=0.013, n=941 '
+    'team-checkpoints) and cuts a playoff team&rsquo;s odds of winning its series to about 57% of '
+    'baseline (p=0.006, n=151 series) &mdash; see Table 1. The effect is unchanged by controlling '
+    'for hot-streak form, ruling out simple mean reversion as the explanation. Fan-attention buzz '
+    'shows the same direction but falls short of significance (p=0.066).')
 
 CONCLUSION = ('Collective attention is not simply noisy about NBA outcomes &mdash; it is '
     'systematically miscalibrated in a specific, exploitable way: sudden hype is a warning sign, '
